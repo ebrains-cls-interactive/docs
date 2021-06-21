@@ -1,0 +1,273 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Functional Simulation with Point Neurons &mdash; cls-interactive 0.1.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/style.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+        <script src="../../../../_static/load_ga.js"></script>
+        <script src="../../../../_static/collapse.js"></script>
+        <script src="../../../../_static/banner.js"></script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> cls-interactive
+          
+
+          
+            
+            <img src="../../../../_static/cls-banner.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting_started/getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hpc_status_monitor/hpc_status_monitor.html">HPC Status Monitor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../online_usecases.html">Online Use Cases</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">cls-interactive</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Functional Simulation with Point Neurons</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../../../_sources/online_usecases/brain_area_circuit_in_silico_experiments/cerebellum/functional_simulation_with_point_neurons/functional_simulation_with_point_neurons.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="functional-simulation-with-point-neurons">
+<h1>Functional Simulation with Point Neurons<a class="headerlink" href="#functional-simulation-with-point-neurons" title="Permalink to this headline">¶</a></h1>
+<p>This Use Case can be used to test the functionality of the cerebellar microcircuit, in the NEST environment.
+The Use Case can be found in <em>Online Use Cases/Brain area circuit in silico experiments/Cerebellum/Functional simulation with point neurons</em>.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../../../_images/schema.png"><img alt="../../../../_images/schema.png" src="../../../../_images/schema.png" style="width: 373px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/functional_flow_chart.png"><img alt="../../../../_images/functional_flow_chart.png" src="../../../../_images/functional_flow_chart.png" style="width: 1612px;" /></a>
+</div></blockquote>
+<p><strong>Approach:</strong></p>
+<p>A network is built in pyNEST, following the specificities generated by
+“Cell positioning” and “Connectome”. The network can then be run (locally and,
+in the future, also using HPC by UNICORE) imposing input stimulation patterns
+on specific neurons at the input stage.
+Each neuron is created as a spiking neuron using IAF dynamics with
+conductance-based synapses, with parameters that are specific for each neuron type.
+Pairwise connections are created and tuned in a simplified way (weight
+positive/negative and delay). An input pattern is defined on glomeruli; the
+simulation runs, and the spiking activity of all neurons (neuron ID and
+spike times) is recorded and stored.
+The network spiking dynamics can be investigated by estimating population frequency-related parameters.</p>
+<p><strong>Inputs:</strong></p>
+<ul class="simple">
+<li><p>a single hdf5 file (saved in /storage) containing position and connection data and some useful parameters from scaffold_params.py (in /storage)</p></li>
+</ul>
+<p>The user can define some features of the, “stimulation input spike patterns”:
+stimulation area radius (glomeruli within a central area with a tunable radius
+in µm), start and stop time instants of stimulation (ms), total stimulation
+duration (ms) and spike frequency (Hz).</p>
+<p><strong>Output:</strong></p>
+<ul class="simple">
+<li><p>Files: .gdf files containing spike times of each network neuron along the simulation duration. The user can also choose to save .dat files containing voltage traces</p></li>
+<li><p>Monitoring: 3D scatter plot of spiking activity within the network; raster plot of spikes for each neuron type (selectable by the user) and PSTH</p></li>
+</ul>
+<p><strong>Additional information:</strong></p>
+<ul class="simple">
+<li><p>The whole Use Case should take about 12-15 minutes for a volume base of 200 x 200 µm.</p></li>
+<li><p>BBP tool used in the notebook: pyNEST</p></li>
+</ul>
+<p>Details for each neuron model in the pyNEST network
+Main ref from neuroelectro.org</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../../../_images/table.png"><img alt="../../../../_images/table.png" src="../../../../_images/table.png" style="width: 1005px;" /></a>
+</div></blockquote>
+<p><strong>EXAMPLE</strong></p>
+<blockquote>
+<div><p>A volume of:</p>
+<ul class="simple">
+<li><p>x = 200 µm, z = 200 µm (→ DCN 100 x 100 µm)</p></li>
+<li><p>y = 930 µm (600+150+30+150 µm), i.e. thickness DCN + GRL+ PCL + ML</p></li>
+</ul>
+<p>THUS with 24157# NUMBER of PLACED NEURONS and 634165# of  GENERATED PAIRWISE CONNECTIONS, the PSTH for GOLGI CELLS SPIKES is:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../../../_images/output.png"><img alt="../../../../_images/output.png" src="../../../../_images/output.png" style="width: 700px;" /></a>
+</div></blockquote>
+</div></blockquote>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, EBRAINS Cellular Level Simulation Interactive members.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

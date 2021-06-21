@@ -1,0 +1,292 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>HPC Status Monitor &mdash; cls-interactive 0.1.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/style.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+        <script src="../_static/load_ga.js"></script>
+        <script src="../_static/collapse.js"></script>
+        <script src="../_static/banner.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Online Use Cases" href="../online_usecases/online_usecases.html" />
+    <link rel="prev" title="Getting started" href="../getting_started/getting_started.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> cls-interactive
+          
+
+          
+            
+            <img src="../_static/cls-banner.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/getting_started.html">Getting started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">HPC Status Monitor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#hpc-system-status">HPC system status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hpc-system-status-user-s-details">HPC system status: user’s details</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../online_usecases/online_usecases.html">Online Use Cases</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">cls-interactive</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>HPC Status Monitor</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/hpc_status_monitor/hpc_status_monitor.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="hpc-status-monitor">
+<span id="id1"></span><h1>HPC Status Monitor<a class="headerlink" href="#hpc-status-monitor" title="Permalink to this headline">¶</a></h1>
+<p>The HPC Status Monitor allows to check the status of the HPC systems available
+for job submission from the HBP Collaboratory and the remaining quotas reserved
+to the user on each of them.</p>
+<p>In order to run a job in the HPC systems, the HBP user needs to be
+mapped on and to be part of (at least) a project on those systems.
+If the user does not have any access and allocation to any systems, she/he can
+still submit jobs (with limited quotas) through the available service accounts.
+For further details on the service account please refer to the dedicated
+<a class="reference internal" href="../getting_started/getting_started.html#service-account"><span class="std std-ref">Service Account</span></a> documentation.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="hpc-system-status">
+<span id="id2"></span><h2>HPC system status<a class="headerlink" href="#hpc-system-status" title="Permalink to this headline">¶</a></h2>
+<p>The HPC Status Monitor’s top panel indicates the status of the HPC systems and whether
+they provide the Service Account submission functionality (see Fig. 1).
+The green icon indicates that the system is running while the red cross
+shows the system and/or the Service Account for that system is not currently
+available.</p>
+<p>The refresh and info icons, in the top right part of the panel, allow to
+update the HPC system status and open the HPC monitor Guidebook page
+respectively.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../_images/hpc_monitor_main.png"><img alt="../_images/hpc_monitor_main.png" class="align-right" src="../_images/hpc_monitor_main.png" style="width: 794.4000000000001px; height: 449.6px;" /></a>
+<p>Fig. 1 Top panel of the HPC Status Monitor.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="hpc-system-status-user-s-details">
+<h2>HPC system status: user’s details<a class="headerlink" href="#hpc-system-status-user-s-details" title="Permalink to this headline">¶</a></h2>
+<p>After clicking on any of the HPC system names in the top panel, the <strong>User’s
+Details</strong> section unfolds and the user’s quotas (including the Service Account
+one) as well as the corresponding projects are shown (see Fig. 2).
+While an HPC system might be online (i.e. the green icon is shown in the top
+panel) the user might not be able to submit jobs on that system (for example if
+the default node for job submission is temporarily unavailable).</p>
+<p>In order to check whether the user is able to submit
+a job on a specific project, a <strong>Check</strong> button is displayed on the rightmost
+column of the user’s details panel. The button’s status changes, namely turns
+into the green or the red cross icon, depending on the possibility for the user
+to submit job at the moment of checking.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../_images/hpc_monitor_pizdaint.png"><img alt="../_images/hpc_monitor_pizdaint.png" class="align-right" src="../_images/hpc_monitor_pizdaint.png" style="width: 806.4000000000001px; height: 776.0px;" /></a>
+<p>Fig. 2 User’s details panel. The projects the user belongs to on the
+selected HPC system and the relative quotas are shown.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>In case the user does not have any quota on a system, or the query has not been
+successful, an error message is displayed (see Fig. 3).</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../_images/hpc_monitor_error.png"><img alt="../_images/hpc_monitor_error.png" class="align-right" src="../_images/hpc_monitor_error.png" style="width: 805.6px; height: 448.0px;" /></a>
+<p>Fig. 3. Error message. In this example, the query to the HPC system was not
+successful</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../online_usecases/online_usecases.html" class="btn btn-neutral float-right" title="Online Use Cases" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../getting_started/getting_started.html" class="btn btn-neutral float-left" title="Getting started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, EBRAINS Cellular Level Simulation Interactive members.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

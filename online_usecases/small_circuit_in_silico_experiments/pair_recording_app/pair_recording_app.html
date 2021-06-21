@@ -1,0 +1,316 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>In silico experiments of a small circuit extracted from large scale detailed network models &mdash; cls-interactive 0.1.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+        <script src="../../../_static/load_ga.js"></script>
+        <script src="../../../_static/collapse.js"></script>
+        <script src="../../../_static/banner.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Configure and run a simplified cortical circuit with the CxSystem2 simulation framework" href="../cxsystem2/cxsystem2.html" />
+    <link rel="prev" title="Small Circuit In Silico Experiments" href="../small_circuit_in_silico_experiments.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> cls-interactive
+          
+
+          
+            
+            <img src="../../../_static/cls-banner.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hpc_status_monitor/hpc_status_monitor.html">HPC Status Monitor</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../online_usecases.html">Online Use Cases</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../trace_analysis/trace_analysis.html">Trace Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../morphology_analysis/morphology_analysis.html">Morphology Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../single_cell_modeling/single_cell_modeling.html">Single Cell Building</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../single_cell_in_silico/single_cell_in_silico.html">Single Cell <em>In Silico</em> Experiments</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../small_circuit_in_silico_experiments.html">Small Circuit <em>In Silico</em> Experiments</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">In silico experiments of a small circuit extracted from large scale detailed network models</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#usage">Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../cxsystem2/cxsystem2.html">Configure and run a simplified cortical circuit with the CxSystem2 simulation framework</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../brain_area_circuit_in_silico_experiments/brain_area_circuit_in_silico_experiments.html">Brain area circuit <em>in silico</em> experiments</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">cls-interactive</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../online_usecases.html">Online Use Cases</a> &raquo;</li>
+        
+          <li><a href="../small_circuit_in_silico_experiments.html">Small Circuit <em>In Silico</em> Experiments</a> &raquo;</li>
+        
+      <li>In silico experiments of a small circuit extracted from large scale detailed network models</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../../_sources/online_usecases/small_circuit_in_silico_experiments/pair_recording_app/pair_recording_app.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="in-silico-experiments-of-a-small-circuit-extracted-from-large-scale-detailed-network-models">
+<h1>In silico experiments of a small circuit extracted from large scale detailed network models<a class="headerlink" href="#in-silico-experiments-of-a-small-circuit-extracted-from-large-scale-detailed-network-models" title="Permalink to this headline">¶</a></h1>
+<p>This use case, implemented through the Pair Recording application, is a web
+environment for a small circuit in-silico experiments.</p>
+<p>It provides an extended toolset to configure and run simulations of single cell
+models as well as multiple connected neurons from a given circuit.
+The application’s graphical user interface allows the user to define, in a first
+step, a small circuit composed of several connected neurons, and, in a second
+step, to experiment on this circuit by defining a stimulation and reporting
+protocol.</p>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>The Use Case can be found among the <cite>Online Use Cases</cite> under the
+<cite>Small Circuit In Silico Experiments</cite> menu, in the <cite>Brain Simulation Platform</cite>.
+The user can select a base circuit from the list to open the Pair Recording
+application.</p>
+<a class="reference internal image-reference" href="../../../_images/step_1.png"><img alt="../../../_images/step_1.png" src="../../../_images/step_1.png" style="width: 800px;" /></a>
+<p>The workflow consists of the following three steps:</p>
+<ol class="arabic simple">
+<li><p>selecting a small circuit of several connected neurons</p></li>
+<li><p>configuring stimulation and reporting protocols</p></li>
+<li><p>running a simulation and inspecting its results</p></li>
+</ol>
+<p>When the application has been started (on the initial load it will fetch
+the necessary circuit information - e.g. circuit info, cell locations and
+properties - so this might take some time) an interactive circuit visualisation
+will appear with controls facilitating the cell selection.</p>
+<a class="reference internal image-reference" href="../../../_images/step_2.png"><img alt="../../../_images/step_2.png" src="../../../_images/step_2.png" style="width: 800px;" /></a>
+<p>Cells in the view are color-coded by one of their properties. The user can
+change this property via the <cite>Color by</cite> selection menu in the bottom of the view.
+The form on the right consists of various controls and allows the user to filter
+and select the cells. Two types of filters are available: property and
+connectivity.</p>
+<p>Property (display) filters can be used to show only cells with particular
+properties (including subtypes) or filter out a subset of particular cells based
+on their properties. By default, multiple added filters use OR (union) logic to
+compose a subset of cells. When required, the user can switch this
+mode to the AND (intersection) logic. This applies to both types of filters:
+<cite>include</cite> and <cite>exclude</cite>. Connectivity filters can be used to show neurons with
+afferent/efferent connections to/from a selected cell.</p>
+<p>Cells can be selected for later simulations by clicking on them in the
+interactive view or, if known beforehand, by specifying their <cite>gid</cite> in the form
+and clicking the <cite>Add</cite> button.</p>
+<a class="reference internal image-reference" href="../../../_images/step_3.png"><img alt="../../../_images/step_3.png" src="../../../_images/step_3.png" style="width: 800px;" /></a>
+<p>When the cell selection is done, the user can proceed to the simulation
+configuration by clicking the corresponding button. This will load and render the
+morphologies of the selected cells.</p>
+<a class="reference internal image-reference" href="../../../_images/step_4.png"><img alt="../../../_images/step_4.png" src="../../../_images/step_4.png" style="width: 800px;" /></a>
+<p>The user can stimulate and/or record specific compartments by clicking on them
+and choosing the type of instrument to be added (stimulus, recording or
+synaptic input - the latter is only available for somas). Each added stimulus
+and synaptic input can be configured in the right panel.</p>
+<p>Available types of stimuli are:</p>
+<ul class="simple">
+<li><p>step current</p></li>
+<li><p>ramp current</p></li>
+<li><p>pulse current (soma only)</p></li>
+<li><p>voltage clamp (soma only; this will add current recording automatically)</p></li>
+</ul>
+<p>Synaptic input will provide a cell with a presynaptic spike train of a
+given frequency with Poisson distribution for synaptic contacts with the selected
+pre-synaptic cells (filtered by a given pre-synaptic cell property).</p>
+<a class="reference internal image-reference" href="../../../_images/step_5.png"><img alt="../../../_images/step_5.png" src="../../../_images/step_5.png" style="width: 800px;" /></a>
+<p>When stimuli and recordings are configured, the user can proceed to start
+a simulation with the given parameters. This can be done by clicking on the
+<cite>Run simulation</cite> button at the top right of the panel. After a simulation
+has been initialized, voltage and current recording graphs will appear
+according to the selected recordings and will update in real-time while
+the simulation is running.</p>
+<a class="reference internal image-reference" href="../../../_images/step_6.png"><img alt="../../../_images/step_6.png" src="../../../_images/step_6.png" style="width: 800px;" /></a>
+<p>The simulated activity can be downloaded in CSV format by clicking on the
+corresponding button in the bottom right part of the chart.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../cxsystem2/cxsystem2.html" class="btn btn-neutral float-right" title="Configure and run a simplified cortical circuit with the CxSystem2 simulation framework" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../small_circuit_in_silico_experiments.html" class="btn btn-neutral float-left" title="Small Circuit In Silico Experiments" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, EBRAINS Cellular Level Simulation Interactive members.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
