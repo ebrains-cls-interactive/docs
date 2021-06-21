@@ -1,0 +1,44 @@
+ul.hidden-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+button.toggle-button {
+    margin-left: 1rem;
+    border: none;
+    color: rgba(0,0,0,.8);
+    background-color: #ffffff;
+}
+
+button.toggle-buttons {
+    float: right;
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    border: 0;
+	border-radius: 0.32rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    background-color: #69a6ce;
+    text-align: center;
+    transition: all 0.2s;
+    line-height: 1.5;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+button.toggle-buttons:hover {
+    background-color: #2980b9;
+    color: #ffffff;
+}
+
+.hidden {
+    display: none;
+}
+
+.arrow {
+    padding-top: 0.15rem;
+}
+
