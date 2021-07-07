@@ -15,7 +15,10 @@ $(document).ready(function() {
     });
 
     $(".toctree-wrapper").each(function() {
-        $(this).before("<button id='toggle-all-button' class='toggle-buttons hidden-all' onclick='toggleAll(this)'>Expand All</button>");    });
+        if ($(this).find(".toctree-l3").length > 0) {
+            $(this).before("<button id='toggle-all-button' class='toggle-buttons hidden-all' onclick='toggleAll(this)'>Expand All</button>");
+        }
+    });
 });
 
 function expandList(button) {
