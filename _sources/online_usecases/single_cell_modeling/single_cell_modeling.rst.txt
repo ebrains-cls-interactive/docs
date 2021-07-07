@@ -9,7 +9,7 @@ Single Cell Building
 
     overview/overview
     hippocampus/hippocampus
+    cerebellum/cerebellum
     
 ..
-    cerebellum/cerebellum  
     basal_ganglia/basal_ganglia
