@@ -1,7 +1,7 @@
 .. _efel_gui:
 
 ##################
-Neuro Feature extraction
+Neuro Feature Extraction
 ##################
 
 A detailed guidebook of the NFE application is available at this 
