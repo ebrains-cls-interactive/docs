@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html4" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cerebro-cerebellar Closed-loop experiment &mdash; cls-interactive 0.2 documentation</title>
-      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <title>Cerebro-cerebellar Closed-loop experiment &mdash; cls-interactive 0.2 documentation</title><link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../../_static/css/style.css" type="text/css" />
       <link rel="stylesheet" href="../../../../_static/css/style.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
-        <script src="../../../../_static/jquery.js"></script>
-        <script src="../../../../_static/underscore.js"></script>
-        <script src="../../../../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-        <script src="../../../../_static/load_ga.js"></script>
-        <script src="../../../../_static/collapse.js"></script>
-        <script src="../../../../_static/banner.js"></script>
+  <script id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+        <script type="text/javascript" src="../../../../_static/load_ga.js"></script>
+        <script type="text/javascript" src="../../../../_static/collapse.js"></script>
+        <script type="text/javascript" src="../../../../_static/banner.js"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" /> 
@@ -31,8 +29,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../../index.html" class="icon icon-home"> cls-interactive
-            <img src="../../../../_static/cls-banner.png" class="logo" alt="Logo"/>
+            <a href="../../../../index.html" class="icon icon-home"> cls-interactive<img src="../../../../_static/cls-banner.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 0.2
@@ -75,7 +72,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="cerebro-cerebellar-closed-loop-experiment">
+  <div class="section" id="cerebro-cerebellar-closed-loop-experiment">
 <h1>Cerebro-cerebellar Closed-loop experiment<a class="headerlink" href="#cerebro-cerebellar-closed-loop-experiment" title="Permalink to this headline"></a></h1>
 <p>This Use Case shows a modeling effort of whole brain functionalities by
 leveraging the existing cerebellar models. We model and simulate the forward
@@ -102,28 +99,28 @@ discrepancy and compensatory motor commands. Therefore, the cerebellum works
 as a general-purpose massive predictive machine in whole-brain modular systems.</p>
 <p><strong>Inputs:</strong></p>
 <ul class="simple">
-<li><p>One hdf5 file (saved in /storage) containing network topology data, i.e. cell positions and connections.</p></li>
-<li><p>One json file (/storage/scaffold_network_BSP_static.json) representing a network without plasticity, with fixed synaptic weights between the different neural populations.</p></li>
-<li><p>One json file (/storage/scaffold_network_BSP.json) representing a network provided with distributed STDP plasticity mechanisms.</p></li>
+<li>One hdf5 file (saved in /storage) containing network topology data, i.e. cell positions and connections.</li>
+<li>One json file (/storage/scaffold_network_BSP_static.json) representing a network without plasticity, with fixed synaptic weights between the different neural populations.</li>
+<li>One json file (/storage/scaffold_network_BSP.json) representing a network provided with distributed STDP plasticity mechanisms.</li>
 </ul>
 <p><strong>Output:</strong></p>
 <ul class="simple">
-<li><p>Monitoring: evolution of the error of the final position of the robot end-effector (i.e., the fingertip of the arm performing the pointing task) along the trials. The error remains stable when the static cerebellar model is used as a controller, while the error gradually decreases when a plastic cerebellar controller is used.</p></li>
+<li>Monitoring: evolution of the error of the final position of the robot end-effector (i.e., the fingertip of the arm performing the pointing task) along the trials. The error remains stable when the static cerebellar model is used as a controller, while the error gradually decreases when a plastic cerebellar controller is used.</li>
 </ul>
 <p><strong>Additional information:</strong></p>
 <ul class="simple">
-<li><p>The user needs to run the notebooks in the following order:</p></li>
+<li>The user needs to run the notebooks in the following order:</li>
 </ul>
 <ol class="arabic simple">
-<li><p>Preparation of the environment</p></li>
-<li><p>Calibration</p></li>
-<li><p>Simulation</p></li>
+<li>Preparation of the environment</li>
+<li>Calibration</li>
+<li>Simulation</li>
 </ol>
 <ul class="simple">
-<li><p>The whole Use Case should take about 1 hour for a volume base of 400 x 400 µm.</p></li>
-<li><p>The BSP foundation software used in the notebook is pyNEST</p></li>
+<li>The whole Use Case should take about 1 hour for a volume base of 400 x 400 µm.</li>
+<li>The BSP foundation software used in the notebook is pyNEST</li>
 </ul>
-</section>
+</div>
 
 
            </div>

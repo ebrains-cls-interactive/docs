@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html4" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>In silico experiments of a small circuit extracted from large scale detailed network models &mdash; cls-interactive 0.2 documentation</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <title>In silico experiments of a small circuit extracted from large scale detailed network models &mdash; cls-interactive 0.2 documentation</title><link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-        <script src="../../../_static/load_ga.js"></script>
-        <script src="../../../_static/collapse.js"></script>
-        <script src="../../../_static/banner.js"></script>
+  <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+        <script type="text/javascript" src="../../../_static/load_ga.js"></script>
+        <script type="text/javascript" src="../../../_static/collapse.js"></script>
+        <script type="text/javascript" src="../../../_static/banner.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -33,8 +31,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> cls-interactive
-            <img src="../../../_static/cls-banner.png" class="logo" alt="Logo"/>
+            <a href="../../../index.html" class="icon icon-home"> cls-interactive<img src="../../../_static/cls-banner.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 0.2
@@ -94,7 +91,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="in-silico-experiments-of-a-small-circuit-extracted-from-large-scale-detailed-network-models">
+  <div class="section" id="in-silico-experiments-of-a-small-circuit-extracted-from-large-scale-detailed-network-models">
 <h1>In silico experiments of a small circuit extracted from large scale detailed network models<a class="headerlink" href="#in-silico-experiments-of-a-small-circuit-extracted-from-large-scale-detailed-network-models" title="Permalink to this headline"></a></h1>
 <p>This use case, implemented through the Pair Recording application, is a web
 environment for a small circuit in-silico experiments.</p>
@@ -104,7 +101,7 @@ The application’s graphical user interface allows the user to define, in a fir
 step, a small circuit composed of several connected neurons, and, in a second
 step, to experiment on this circuit by defining a stimulation and reporting
 protocol.</p>
-<section id="usage">
+<div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline"></a></h2>
 <p>The Use Case can be found among the <cite>Online Use Cases</cite> under the
 <cite>Small Circuit In Silico Experiments</cite> menu, in the <cite>Brain Simulation Platform</cite>.
@@ -113,9 +110,9 @@ application.</p>
 <a class="reference internal image-reference" href="../../../_images/step_1.png"><img alt="../../../_images/step_1.png" src="../../../_images/step_1.png" style="width: 800px;" /></a>
 <p>The workflow consists of the following three steps:</p>
 <ol class="arabic simple">
-<li><p>selecting a small circuit of several connected neurons</p></li>
-<li><p>configuring stimulation and reporting protocols</p></li>
-<li><p>running a simulation and inspecting its results</p></li>
+<li>selecting a small circuit of several connected neurons</li>
+<li>configuring stimulation and reporting protocols</li>
+<li>running a simulation and inspecting its results</li>
 </ol>
 <p>When the application has been started (on the initial load it will fetch
 the necessary circuit information - e.g. circuit info, cell locations and
@@ -148,10 +145,10 @@ synaptic input - the latter is only available for somas). Each added stimulus
 and synaptic input can be configured in the right panel.</p>
 <p>Available types of stimuli are:</p>
 <ul class="simple">
-<li><p>step current</p></li>
-<li><p>ramp current</p></li>
-<li><p>pulse current (soma only)</p></li>
-<li><p>voltage clamp (soma only; this will add current recording automatically)</p></li>
+<li>step current</li>
+<li>ramp current</li>
+<li>pulse current (soma only)</li>
+<li>voltage clamp (soma only; this will add current recording automatically)</li>
 </ul>
 <p>Synaptic input will provide a cell with a presynaptic spike train of a
 given frequency with Poisson distribution for synaptic contacts with the selected
@@ -166,8 +163,8 @@ the simulation is running.</p>
 <a class="reference internal image-reference" href="../../../_images/step_6.png"><img alt="../../../_images/step_6.png" src="../../../_images/step_6.png" style="width: 800px;" /></a>
 <p>The simulated activity can be downloaded in CSV format by clicking on the
 corresponding button in the bottom right part of the chart.</p>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>

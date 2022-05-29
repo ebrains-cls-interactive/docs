@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html4" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Functional Simulation with Advanced Point Neurons (E-GLIF) &mdash; cls-interactive 0.2 documentation</title>
-      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <title>Functional Simulation with Advanced Point Neurons (E-GLIF) &mdash; cls-interactive 0.2 documentation</title><link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../../_static/css/style.css" type="text/css" />
       <link rel="stylesheet" href="../../../../_static/css/style.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
-        <script src="../../../../_static/jquery.js"></script>
-        <script src="../../../../_static/underscore.js"></script>
-        <script src="../../../../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-        <script src="../../../../_static/load_ga.js"></script>
-        <script src="../../../../_static/collapse.js"></script>
-        <script src="../../../../_static/banner.js"></script>
+  <script id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+        <script type="text/javascript" src="../../../../_static/load_ga.js"></script>
+        <script type="text/javascript" src="../../../../_static/collapse.js"></script>
+        <script type="text/javascript" src="../../../../_static/banner.js"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" /> 
@@ -31,8 +29,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../../index.html" class="icon icon-home"> cls-interactive
-            <img src="../../../../_static/cls-banner.png" class="logo" alt="Logo"/>
+            <a href="../../../../index.html" class="icon icon-home"> cls-interactive<img src="../../../../_static/cls-banner.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 0.2
@@ -75,7 +72,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="functional-simulation-with-advanced-point-neurons-e-glif">
+  <div class="section" id="functional-simulation-with-advanced-point-neurons-e-glif">
 <h1>Functional Simulation with Advanced Point Neurons (E-GLIF)<a class="headerlink" href="#functional-simulation-with-advanced-point-neurons-e-glif" title="Permalink to this headline"></a></h1>
 <p>This Use Case can be used to simulate an olivocerebellar microcircuit with
 point neurons modeled as E-GLIF (Extended-Generalized Leaky Integrate and
@@ -112,7 +109,7 @@ cerebellar signal encoding, including burst-pause (in Purkinje cells) and
 pause-burst (in Deep Cerebellar Nuclei cells) mechanisms.</p>
 <p><strong>Inputs</strong></p>
 <ul class="simple">
-<li><p>a single hdf5 file (saved in /storage) containing network topology data, i.e. cell positions and connections.</p></li>
+<li>a single hdf5 file (saved in /storage) containing network topology data, i.e. cell positions and connections.</li>
 </ul>
 <p>The user can modify the stimulation protocol by changing the parameters in the
 “Defining stimuli” section, namely: the duration of the simulation [ms]; the
@@ -120,14 +117,14 @@ start [ms], end [ms] and frequency [Hz] of each stimulus; the radius [µm]
 of the stimulated area in the Granular layer.</p>
 <p><strong>Output</strong></p>
 <ul class="simple">
-<li><p>Files: .gdf files containing spike times of each network neuron over the simulation duration. The user can also choose to save the .dat files containing the voltage traces (but this would significantly increase the simulation time if whole population are selected)</p></li>
-<li><p>Monitoring: raster plot of spikes for each neuron type, which the user can select, and PSTH</p></li>
+<li>Files: .gdf files containing spike times of each network neuron over the simulation duration. The user can also choose to save the .dat files containing the voltage traces (but this would significantly increase the simulation time if whole population are selected)</li>
+<li>Monitoring: raster plot of spikes for each neuron type, which the user can select, and PSTH</li>
 </ul>
 <p><strong>Additional information</strong></p>
 <ul class="simple">
-<li><p>The whole Use Case should take about 40 minutes to be completed, for a volume base of 400 x 400 µm.</p></li>
-<li><p>The BSP foundation software used in the notebook is pyNEST</p></li>
-<li><p>Single neuron and network parameters are the same reported in [<a class="reference external" href="https://doi.org/10.3389/fncom.2019.00068">Geminiani et al., 2019</a>]</p></li>
+<li>The whole Use Case should take about 40 minutes to be completed, for a volume base of 400 x 400 µm.</li>
+<li>The BSP foundation software used in the notebook is pyNEST</li>
+<li>Single neuron and network parameters are the same reported in [<a class="reference external" href="https://doi.org/10.3389/fncom.2019.00068">Geminiani et al., 2019</a>]</li>
 </ul>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -149,7 +146,7 @@ thanks to the modular connectivity of the network:</p>
 </div></blockquote>
 <p>with the complex spike not occurring.</p>
 </div></blockquote>
-</section>
+</div>
 
 
            </div>

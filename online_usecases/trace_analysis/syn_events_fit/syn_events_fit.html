@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html4" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Synaptic events fitting &mdash; cls-interactive 0.2 documentation</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <title>Synaptic events fitting &mdash; cls-interactive 0.2 documentation</title><link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-        <script src="../../../_static/load_ga.js"></script>
-        <script src="../../../_static/collapse.js"></script>
-        <script src="../../../_static/banner.js"></script>
+  <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+        <script type="text/javascript" src="../../../_static/load_ga.js"></script>
+        <script type="text/javascript" src="../../../_static/collapse.js"></script>
+        <script type="text/javascript" src="../../../_static/banner.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -33,8 +31,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> cls-interactive
-            <img src="../../../_static/cls-banner.png" class="logo" alt="Logo"/>
+            <a href="../../../index.html" class="icon icon-home"> cls-interactive<img src="../../../_static/cls-banner.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 0.2
@@ -97,16 +94,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="synaptic-events-fitting">
+  <div class="section" id="synaptic-events-fitting">
 <span id="syn-events-fit"></span><h1>Synaptic events fitting<a class="headerlink" href="#synaptic-events-fitting" title="Permalink to this headline"></a></h1>
 <p>This Use Case allows a user to fit synaptic events using data and models from the CSCS storage.</p>
 <p>Selecting this Use Case, two Jupyter Notebooks are cloned in a private existing/new Collab.
 The cloned Notebooks are:</p>
-<section id="synaptic-events-fitting-config">
+<div class="section" id="synaptic-events-fitting-config">
 <h2>Synaptic events fitting - Config<a class="headerlink" href="#synaptic-events-fitting-config" title="Permalink to this headline"></a></h2>
 <p>It allows the user to:</p>
 <ol class="arabic simple">
-<li><p>Select, download and visualize experimental data from the CSCS storage. The user may then select the data to be fitted.</p></li>
+<li>Select, download and visualize experimental data from the CSCS storage. The user may then select the data to be fitted.</li>
 </ol>
 <div class="bsp-container-center docutils container">
 <a class="reference internal image-reference" href="../../../_images/data_selection.png"><img alt="../../../_images/data_selection.png" class="align-center" src="../../../_images/data_selection.png" style="width: 850px;" /></a>
@@ -124,7 +121,7 @@ set of dependencies for other parameters</p>
 <div class="line"><br /></div>
 </div>
 <ol class="arabic simple" start="2">
-<li><p>Select a default or a local mod file</p></li>
+<li>Select a default or a local mod file</li>
 </ol>
 <div class="bsp-container-center docutils container">
 <a class="reference internal image-reference" href="../../../_images/mod_selection.png"><img alt="../../../_images/mod_selection.png" class="align-center" src="../../../_images/mod_selection.png" style="width: 300px;" /></a>
@@ -170,7 +167,7 @@ values are shown in the figures below:</p>
 <div class="line"><br /></div>
 </div>
 <ol class="arabic simple" start="3">
-<li><p>Configure the parameters of the optimization job: the title of the job, the number of nodes, the number of cores and the runtime. Run the fitting procedure using UNICORE authentication on JURECA (booster partition), GALILEO, or on NSG (using your account or the Service Account), and check the job status.</p></li>
+<li>Configure the parameters of the optimization job: the title of the job, the number of nodes, the number of cores and the runtime. Run the fitting procedure using UNICORE authentication on JURECA (booster partition), GALILEO, or on NSG (using your account or the Service Account), and check the job status.</li>
 </ol>
 <p>On JURECA, the node number, the number of CPUs per node and the runtime are set by default to 2, 24 and 10m respectively.</p>
 <div class="line-block">
@@ -218,7 +215,7 @@ is 72. If you would require more than 72 nodes, please contact
 <div class="line"><br /></div>
 </div>
 <ol class="arabic simple" start="4">
-<li><p>If you are interested in looking at the code, click on “Click here to toggle on/off the source code” button.</p></li>
+<li>If you are interested in looking at the code, click on “Click here to toggle on/off the source code” button.</li>
 </ol>
 <div class="bsp-container-center docutils container">
 <a class="reference internal image-reference" href="../../../_images/toggle_button1.png"><img alt="../../../_images/toggle_button1.png" class="align-center" src="../../../_images/toggle_button1.png" style="width: 300px;" /></a>
@@ -227,7 +224,7 @@ is 72. If you would require more than 72 nodes, please contact
 <div class="line"><br /></div>
 </div>
 <ol class="arabic simple" start="5">
-<li><p>If you want to start a new fitting from the beginning, click on “Click here to start a new fit” button.</p></li>
+<li>If you want to start a new fitting from the beginning, click on “Click here to start a new fit” button.</li>
 </ol>
 <div class="bsp-container-center docutils container">
 <a class="reference internal image-reference" href="../../../_images/Restart.png"><img alt="../../../_images/Restart.png" class="align-center" src="../../../_images/Restart.png" style="width: 300px;" /></a>
@@ -235,8 +232,8 @@ is 72. If you would require more than 72 nodes, please contact
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-</section>
-<section id="synaptic-events-fitting-analysis">
+</div>
+<div class="section" id="synaptic-events-fitting-analysis">
 <h2>Synaptic events fitting - Analysis<a class="headerlink" href="#synaptic-events-fitting-analysis" title="Permalink to this headline"></a></h2>
 <p>This Jupyter Notebook allows the user to fetch the fitting results from the
 storage of the HPC system to the storage of the Collab or to analyze the
@@ -278,7 +275,7 @@ parameters available in the Collab storage.</p>
 </div>
 <p>The user can visualize the data in table form, a box plot and the best fit.</p>
 <ol class="arabic simple">
-<li><p>The table of results (sorted in ascending order by the fitting error).</p></li>
+<li>The table of results (sorted in ascending order by the fitting error).</li>
 </ol>
 <div class="bsp-container-center docutils container">
 <a class="reference internal image-reference" href="../../../_images/results_table.png"><img alt="../../../_images/results_table.png" class="align-center" src="../../../_images/results_table.png" style="width: 700px;" /></a>
@@ -288,7 +285,7 @@ parameters available in the Collab storage.</p>
 <div class="line"><br /></div>
 </div>
 <ol class="arabic simple" start="2">
-<li><p>The boxplot of the normalized results.</p></li>
+<li>The boxplot of the normalized results.</li>
 </ol>
 <div class="bsp-container-center docutils container">
 <a class="reference internal image-reference" href="../../../_images/results_box.png"><img alt="../../../_images/results_box.png" class="align-center" src="../../../_images/results_box.png" style="width: 700px;" /></a>
@@ -298,7 +295,7 @@ parameters available in the Collab storage.</p>
 <div class="line"><br /></div>
 </div>
 <ol class="arabic simple" start="3">
-<li><p>The best fit.</p></li>
+<li>The best fit.</li>
 </ol>
 <div class="bsp-container-center docutils container">
 <a class="reference internal image-reference" href="../../../_images/results_fit.png"><img alt="../../../_images/results_fit.png" class="align-center" src="../../../_images/results_fit.png" style="width: 700px;" /></a>
@@ -312,8 +309,8 @@ the source code” button.</p>
 <div class="bsp-container-center docutils container">
 <a class="reference internal image-reference" href="../../../_images/toggle_button2.png"><img alt="../../../_images/toggle_button2.png" class="align-center" src="../../../_images/toggle_button2.png" style="width: 300px;" /></a>
 </div>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>

@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html4" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Morphology Analysis &mdash; cls-interactive 0.2 documentation</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <title>Morphology Analysis &mdash; cls-interactive 0.2 documentation</title><link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-        <script src="../../../_static/load_ga.js"></script>
-        <script src="../../../_static/collapse.js"></script>
-        <script src="../../../_static/banner.js"></script>
+  <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+        <script type="text/javascript" src="../../../_static/load_ga.js"></script>
+        <script type="text/javascript" src="../../../_static/collapse.js"></script>
+        <script type="text/javascript" src="../../../_static/banner.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -33,8 +31,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> cls-interactive
-            <img src="../../../_static/cls-banner.png" class="logo" alt="Logo"/>
+            <a href="../../../index.html" class="icon icon-home"> cls-interactive<img src="../../../_static/cls-banner.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 0.2
@@ -95,55 +92,59 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="morphology-analysis">
+  <div class="section" id="morphology-analysis">
 <span id="id1"></span><h1>Morphology Analysis<a class="headerlink" href="#morphology-analysis" title="Permalink to this headline"></a></h1>
 <p>The <a class="reference external" href="https://collab.humanbrainproject.eu/#/collab/1655/nav/66851">Morphology Analysis</a> Use Case allows analyzing neuronal morphology with <a class="reference external" href="https://github.com/BlueBrain/NeuroM">NeuroM</a>.</p>
 <p><a class="reference external" href="https://github.com/BlueBrain/NeuroM">NeuroM</a> is a Python toolkit for the analysis and processing of neuron morphologies. It can be used to:</p>
 <ul class="simple">
-<li><p>quickly extract various morphometrics for one or a population of neurons. Examples of such metrics are the neurite length, the number of bifurcations per neurite or the number of segments. The list of all features can be found in the NeuroM documentation (<a class="reference external" href="http://neurom.readthedocs.io/en/stable/_neurom_build/neurom.fst.get.html">here</a> and <a class="reference external" href="http://neurom.readthedocs.io/en/stable/_neurom_build/neurom.get.html">there</a>).</p></li>
-<li><p><a class="reference external" href="http://neurom.readthedocs.io/en/stable/_neurom_build/neurom.check.html">check</a> the validity of morphology files (examples: no missing parent points, no excessively small neurite radii, no missing soma).</p></li>
-<li><p>visualize neuron morphologies with the module: <a class="reference external" href="http://neurom.readthedocs.io/en/stable/_neurom_build/neurom.viewer.html">neuron.view</a>.</p></li>
-<li><p>iterate through morphology parts of a neuron for more advanced Use Cases. One can iterate on neurites, sections (neurite chunk between two successive branching points) or segments (the most fundamental sub-unit of a morphology).</p></li>
+<li>quickly extract various morphometrics for one or a population of neurons. Examples of such metrics are the neurite length, the number of bifurcations per neurite or the number of segments. The list of all features can be found in the NeuroM documentation (<a class="reference external" href="http://neurom.readthedocs.io/en/stable/_neurom_build/neurom.fst.get.html">here</a> and <a class="reference external" href="http://neurom.readthedocs.io/en/stable/_neurom_build/neurom.get.html">there</a>).</li>
+<li><a class="reference external" href="http://neurom.readthedocs.io/en/stable/_neurom_build/neurom.check.html">check</a> the validity of morphology files (examples: no missing parent points, no excessively small neurite radii, no missing soma).</li>
+<li>visualize neuron morphologies with the module: <a class="reference external" href="http://neurom.readthedocs.io/en/stable/_neurom_build/neurom.viewer.html">neuron.view</a>.</li>
+<li>iterate through morphology parts of a neuron for more advanced Use Cases. One can iterate on neurites, sections (neurite chunk between two successive branching points) or segments (the most fundamental sub-unit of a morphology).</li>
 </ul>
-<section id="preview">
+<div class="section" id="preview">
 <h2>Preview<a class="headerlink" href="#preview" title="Permalink to this headline"></a></h2>
 <p>In this Use Case you will learn how to:</p>
 <ul>
-<li><p>Load a neuron morphology with NeuroM</p></li>
-<li><dl>
-<dt>Create visualization plots such as:</dt><dd><a class="reference internal image-reference" href="../../../_images/example_neurom_draw.png"><img alt="../../../_images/example_neurom_draw.png" src="../../../_images/example_neurom_draw.png" style="width: 400px;" /></a>
+<li><p class="first">Load a neuron morphology with NeuroM</p>
+</li>
+<li><dl class="first docutils">
+<dt>Create visualization plots such as:</dt>
+<dd><a class="first last reference internal image-reference" href="../../../_images/example_neurom_draw.png"><img alt="../../../_images/example_neurom_draw.png" src="../../../_images/example_neurom_draw.png" style="width: 400px;" /></a>
 </dd>
 </dl>
 </li>
-<li><dl>
-<dt>Extract soma and neurite related statistics:</dt><dd><img alt="../../../_images/neurom_soma_statistics.png" src="../../../_images/neurom_soma_statistics.png" />
-<img alt="../../../_images/neurom_neurite_statistics.png" src="../../../_images/neurom_neurite_statistics.png" />
+<li><dl class="first docutils">
+<dt>Extract soma and neurite related statistics:</dt>
+<dd><img alt="../../../_images/neurom_soma_statistics.png" class="first" src="../../../_images/neurom_soma_statistics.png" />
+<img alt="../../../_images/neurom_neurite_statistics.png" class="last" src="../../../_images/neurom_neurite_statistics.png" />
 </dd>
 </dl>
 </li>
-<li><dl>
-<dt>Create histograms for a particular feature:</dt><dd><img alt="../../../_images/neurom_feature_histogram.png" src="../../../_images/neurom_feature_histogram.png" />
+<li><dl class="first docutils">
+<dt>Create histograms for a particular feature:</dt>
+<dd><img alt="../../../_images/neurom_feature_histogram.png" class="first last" src="../../../_images/neurom_feature_histogram.png" />
 </dd>
 </dl>
 </li>
 </ul>
-</section>
-<section id="instructions">
+</div>
+<div class="section" id="instructions">
 <h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline"></a></h2>
 <p>Here are the steps to open this Use Case:</p>
 <ol class="arabic">
-<li><p>The Use Case can be found under <a class="reference external" href="https://collab.humanbrainproject.eu/#/collab/1655/nav/66851">Online Use Cases/Morphology Analysis</a>:</p>
+<li><p class="first">The Use Case can be found under <a class="reference external" href="https://collab.humanbrainproject.eu/#/collab/1655/nav/66851">Online Use Cases/Morphology Analysis</a>:</p>
 <blockquote>
 <div><a class="reference internal image-reference" href="../../../_images/select_morphology_analysis.png"><img alt="../../../_images/select_morphology_analysis.png" src="../../../_images/select_morphology_analysis.png" style="width: 700px;" /></a>
 </div></blockquote>
 </li>
-<li><p>After you selection of the <em>Morphology Analysis</em> Use Case, you are asked to
+<li><p class="first">After you selection of the <em>Morphology Analysis</em> Use Case, you are asked to
 select a single-cell model from the HBP database:</p>
 <blockquote>
 <div><a class="reference internal image-reference" href="../../../_images/select_single_cell_model.png"><img alt="../../../_images/select_single_cell_model.png" src="../../../_images/select_single_cell_model.png" style="width: 700px;" /></a>
 </div></blockquote>
 </li>
-<li><p>Next, you should define a Collab in which you want to perform an analysis on
+<li><p class="first">Next, you should define a Collab in which you want to perform an analysis on
 the morphology of the chosen single-cell model. You may choose to add the
 morphology analysis to an existing Collab, or to create a new Collab (See
 also <a class="reference internal" href="../../../getting_started/getting_started.html#working-with-collabs"><span class="std std-ref">Working with Collabs</span></a>):</p>
@@ -151,7 +152,7 @@ also <a class="reference internal" href="../../../getting_started/getting_starte
 <div><a class="reference internal image-reference" href="../../../_images/create_collab.png"><img alt="../../../_images/create_collab.png" src="../../../_images/create_collab.png" style="width: 700px;" /></a>
 </div></blockquote>
 </li>
-<li><p>Once you have selected or created a Collab that you plan to work in, a
+<li><p class="first">Once you have selected or created a Collab that you plan to work in, a
 Jupyter notebook will open. This notebook contains all functionalities you
 need to download the morphology you previously selected and to perform
 analysis. We encourage you to read the documentation that precedes every
@@ -161,8 +162,8 @@ notebook cell.</p>
 </div></blockquote>
 </li>
 </ol>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>

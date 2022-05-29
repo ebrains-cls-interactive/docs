@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html4" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Multicompartmental simulation of the cerebellum &mdash; cls-interactive 0.2 documentation</title>
-      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <title>Multicompartmental simulation of the cerebellum &mdash; cls-interactive 0.2 documentation</title><link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../../_static/css/style.css" type="text/css" />
       <link rel="stylesheet" href="../../../../_static/css/style.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
-        <script src="../../../../_static/jquery.js"></script>
-        <script src="../../../../_static/underscore.js"></script>
-        <script src="../../../../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-        <script src="../../../../_static/load_ga.js"></script>
-        <script src="../../../../_static/collapse.js"></script>
-        <script src="../../../../_static/banner.js"></script>
+  <script id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+        <script type="text/javascript" src="../../../../_static/load_ga.js"></script>
+        <script type="text/javascript" src="../../../../_static/collapse.js"></script>
+        <script type="text/javascript" src="../../../../_static/banner.js"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" /> 
@@ -31,8 +29,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../../index.html" class="icon icon-home"> cls-interactive
-            <img src="../../../../_static/cls-banner.png" class="logo" alt="Logo"/>
+            <a href="../../../../index.html" class="icon icon-home"> cls-interactive<img src="../../../../_static/cls-banner.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 0.2
@@ -75,7 +72,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="multicompartmental-simulation-of-the-cerebellum">
+  <div class="section" id="multicompartmental-simulation-of-the-cerebellum">
 <h1>Multicompartmental simulation of the cerebellum<a class="headerlink" href="#multicompartmental-simulation-of-the-cerebellum" title="Permalink to this headline"></a></h1>
 <p>This use case creates a scaffold model of a piece of 150 by 150 micrometer of
 cerebellar cortex. Inputs arrive through the afferent mossy fibers onto the
@@ -91,25 +88,25 @@ provides a small interface to set the input stimulus.</p>
 potential of one of each cell type’s neurons can be viewed.</p>
 <p>The use case itself contains step by step explanations and code cells that
 guide you through the network construction, simulation and analysis.</p>
-<section id="inputs">
+<div class="section" id="inputs">
 <h2>Inputs<a class="headerlink" href="#inputs" title="Permalink to this headline"></a></h2>
 <ul class="simple">
-<li><p>A configuration file that describes the network architecture and simulation components.</p></li>
-<li><p>A morphology repository containing descriptions of the cell models.</p></li>
+<li>A configuration file that describes the network architecture and simulation components.</li>
+<li>A morphology repository containing descriptions of the cell models.</li>
 </ul>
 <p>After running the code cell under the <code class="docutils literal notranslate"><span class="pre">Configuring</span> <span class="pre">the</span> <span class="pre">input</span></code> section the
 user can specify the start, number and interval for the mossy fiber input onto
 the glomeruli.</p>
-</section>
-<section id="outputs">
+</div>
+<div class="section" id="outputs">
 <h2>Outputs<a class="headerlink" href="#outputs" title="Permalink to this headline"></a></h2>
 <ul class="simple">
-<li><p>A result HDF5 file containing the spike times and some membrane potential recordings.</p></li>
-<li><p>Plots: a spike raster plot, membrane potential plot and a boxplot that shows the
-average firing rate of the cell populations during the input stimulus.</p></li>
+<li>A result HDF5 file containing the spike times and some membrane potential recordings.</li>
+<li>Plots: a spike raster plot, membrane potential plot and a boxplot that shows the
+average firing rate of the cell populations during the input stimulus.</li>
 </ul>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>

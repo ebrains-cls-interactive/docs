@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html4" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Overview &mdash; cls-interactive 0.2 documentation</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <title>Overview &mdash; cls-interactive 0.2 documentation</title><link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-        <script src="../../../_static/load_ga.js"></script>
-        <script src="../../../_static/collapse.js"></script>
-        <script src="../../../_static/banner.js"></script>
+  <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+        <script type="text/javascript" src="../../../_static/load_ga.js"></script>
+        <script type="text/javascript" src="../../../_static/collapse.js"></script>
+        <script type="text/javascript" src="../../../_static/banner.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -33,8 +31,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> cls-interactive
-            <img src="../../../_static/cls-banner.png" class="logo" alt="Logo"/>
+            <a href="../../../index.html" class="icon icon-home"> cls-interactive<img src="../../../_static/cls-banner.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 0.2
@@ -95,7 +92,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="overview">
+  <div class="section" id="overview">
 <span id="scm-overview"></span><h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline"></a></h1>
 <p>The Single Cell Building Use Cases show practical examples of how to obtain a
 single cell model of morphologically and biophysically detailed neurons
@@ -104,15 +101,15 @@ W <em>et al.</em>, 2016, <a class="reference external" href="https://www.ncbi.nl
 <p>All Use Cases in this section use the current, public, version of the
 BluePyOpt. However, the different scientists implementing an optimization for
 a specific cell have used their own organization for the configuration files.</p>
-<section id="hippocampal-neurons">
+<div class="section" id="hippocampal-neurons">
 <span id="id1"></span><h2>Hippocampal neurons<a class="headerlink" href="#hippocampal-neurons" title="Permalink to this headline"></a></h2>
 <p>For the Use Cases referring to hippocampal cells, the different Use Cases will
 guide you through the most appropriate workflow, depending on your goal.
 In general, they are organized around two different possibilities of
 increasing complexity:</p>
 <ol class="arabic simple">
-<li><p>Rebuild an existing single cell model</p></li>
-<li><p>Build your own cell model using HBP data</p></li>
+<li>Rebuild an existing single cell model</li>
+<li>Build your own cell model using HBP data</li>
 </ol>
 <p>They differ in the amount and type of information that is required to
 configure and run an optimization. Below is a short description of all files
@@ -126,7 +123,7 @@ the ion channel or special mechanism kinetics, the stimulation protocols to be
 used (typically step current clamp stimuli), and the electrophysiological
 features you would like to use as a reference for the optimization.</p>
 <p>The above information is contained in four self-consistent JSON files. Self-consistency is ensured by starting all json files used for a specific optimization with the same string, as shown below.</p>
-<section id="morph-json">
+<div class="section" id="morph-json">
 <h3>morph.json<a class="headerlink" href="#morph-json" title="Permalink to this headline"></a></h3>
 <p>Defines the Neurolucida ASCII file containing the 3D reconstruction to be used for the optimization.
 A typical file looks like this:</p>
@@ -136,8 +133,8 @@ A typical file looks like this:</p>
 </pre></div>
 </div>
 <p>Where the first string is the optimization name, arbitrarily chosen by the user, and the second one is the name of the morphology file.</p>
-</section>
-<section id="features-json">
+</div>
+<div class="section" id="features-json">
 <h3>features.json<a class="headerlink" href="#features-json" title="Permalink to this headline"></a></h3>
 <p>Contains the electrophysiological characteristics (spike event features, spike shape features, voltage features etc.) that will be used as a reference by the optimization process. In general, this file can be automatically generated by the eFEL GUI app. The different sections list the various features of interest.
 A typical section looks like this:</p>
@@ -153,8 +150,8 @@ A typical section looks like this:</p>
 </pre></div>
 </div>
 <p>Again, the first string is the name of the optimization, and in this case the user was interested in optimizing the <em>voltage_deflection</em> and <em>voltage_base</em> measured at the soma under a somatic current injection of -0.4 nA.</p>
-</section>
-<section id="protocols-json">
+</div>
+<div class="section" id="protocols-json">
 <h3>protocols.json<a class="headerlink" href="#protocols-json" title="Permalink to this headline"></a></h3>
 <p>Defines the stimulation protocols that should be used for the optimization. This file is also automatically created by the eFEL GUI app, and it is matched with the information contained in the <strong>features.json</strong> file.
 A typical section looks like this:</p>
@@ -179,8 +176,8 @@ A typical section looks like this:</p>
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-</section>
-<section id="parameters-json">
+</div>
+<div class="section" id="parameters-json">
 <h3>parameters.json<a class="headerlink" href="#parameters-json" title="Permalink to this headline"></a></h3>
 <p>This is where a user can strongly determine the quality of the optimization.
 In this file, active and passive properties (and their distribution) are
@@ -228,9 +225,9 @@ to carry out the optimization, a user must have an account on the Neuroscience
 Gateway or on one of the HPC systems supporting the Brain Simulation Platform
 activity, such as CINECA or JSC.</p>
 <p>For details on NSG see <a href="https://www.nsgportal.org/" target="_blank">Neuroscience Gateway</a>.</p>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
 
            </div>
