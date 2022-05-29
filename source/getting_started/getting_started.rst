@@ -482,7 +482,7 @@ For a thourough explanation on how to use the service, please refer to the
 
 .. |sa_doc_link| raw:: html  
 
-    <a href="https://humanbrainproject.github.io/hbp-bsp-service-account/" target="_blank">BSP Service Account documentation</a>.
+    <a href="https://ebrains-cls-interactive.github.io/eb-clsi-service-account/" target="_blank">EBRAINS CLS-Interactive Service Account documentation</a>.
 
 
 
