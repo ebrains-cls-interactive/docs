@@ -5,7 +5,7 @@ Hodgkin-Huxley Neuron Builder
 #############################
 
 
-A detailed guidebook of the NFE application is available at this 
+A detailed guidebook of the Hodgkin-Huxley Neuron Builder web application is available at this 
 |hhnb_guidebook|.
 
 .. |hhnb_guidebook| raw:: html
