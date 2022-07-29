@@ -11,3 +11,4 @@ To be defined ...
 
     pair_recording_app/pair_recording_app
     cxsystem2/cxsystem2
+    netpyne/netpyne
