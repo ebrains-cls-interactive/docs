@@ -1,6 +1,6 @@
 .. _conf_run_hippo_pre:
 
-Rat hippocampus CA1
+Configure and run a rat hippocampus CA1 region using preconfigured HBP model and data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -33,24 +33,23 @@ In the **Section 2)** you can configure:
 
   -  *Population*: Name of a population to receive the stimulation
   -  *Delay*: Time when the stimulus commences, given in
-     milliseconds(ms)
+     milliseconds (ms)
   -  *Duration*: Time length of stimulus duration, given in
-     milliseconds(ms)
+     milliseconds (ms)
   -  *Pattern*: Type of stimulus to inject
-  -  *Synapses per cell*: The number of synapses to create
-  -  *Lambda*: Configure the random distribution
-  -  *Weight*: The strength of the created synapses
+  -  *AmpStart*: The amount of current initially injected when the stimulus activates (nA)
+  -  *AmpEnd*: The final current when a stimulus concludes. Used by Linear (nA)
 
     |edit_stimulus|
 
 -  ``Reports``
 
   -  *Population*: Defines the population from where the data will be reported.
-  -  *StartTime*: Time to start reporting(ms)
-  -  *EndTime*: Time to stop reporting(ms)
+  -  *StartTime*: Time to start reporting (ms)
+  -  *EndTime*: Time to stop reporting (ms)
   -  *Compartments*: Which compartment(s) to report [Soma = compartment, Soma + Dendrites = AllCompartments]
   -  *ReportOn*: What to report [Voltage, Calcium Concentration, Current Summation (for LFP)]
-  -  *dt*: The frequency of reporting in milliseconds(ms)
+  -  *dt*: The frequency of reporting in milliseconds (ms)
   -  *Format*: Defines the report output format [Binary (.bbp), ASCII, HDF5]
 
     |edit_report|
