@@ -23,7 +23,6 @@ could previously not be researched.
    :maxdepth: 6 
 
    getting_started/getting_started
-   hpc_status_monitor/hpc_status_monitor
    online_usecases/online_usecases
 
 .. Indices and tables
