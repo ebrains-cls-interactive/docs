@@ -1,0 +1,187 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Functional Simulation with Advanced Point Neurons (E-GLIF) &mdash; cls-interactive 0.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/style.css?v=8eff675d" />
+      <link rel="stylesheet" href="../../../../_static/css/style.css" type="text/css" />
+
+  
+      <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../_static/documentation_options.js?v=10f1778b"></script>
+      <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+      <script src="../../../../_static/load_ga.js"></script>
+      <script src="../../../../_static/collapse.js"></script>
+      <script src="../../../../_static/banner.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            cls-interactive
+              <img src="../../../../_static/cls-banner.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting_started/getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hpc_status_monitor/hpc_status_monitor.html">HPC Status Monitor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../online_usecases.html">Online Use Cases</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">cls-interactive</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Functional Simulation with Advanced Point Neurons (E-GLIF)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../_sources/online_usecases/brain_area_circuit_in_silico_experiments/cerebellum/functional_simulation_with_eglif/functional_simulation_with_eglif.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="functional-simulation-with-advanced-point-neurons-e-glif">
+<h1>Functional Simulation with Advanced Point Neurons (E-GLIF)<a class="headerlink" href="#functional-simulation-with-advanced-point-neurons-e-glif" title="Link to this heading"></a></h1>
+<p>This Use Case can be used to simulate an olivocerebellar microcircuit with
+point neurons modeled as E-GLIF (Extended-Generalized Leaky Integrate and
+Fire). This advanced point neuron model has been designed and optimized to
+reproduce complex electroresponsive dynamics (including bursting, adaptation,
+resonance, etc) while keeping a limited computational load
+[<a class="reference external" href="https://doi.org/10.3389/fninf.2018.00088">Geminiani et al., 2018</a>].
+Simulations are run in NEST 2.18 and show how realistic single neuron dynamics
+and network topology contribute to network spiking patterns following
+sensory-like stimuli.</p>
+<p>The Use Case can be found in <em>Online Use Cases/Brain area circuit in silico
+experiments/Cerebellum/Functional Simulation with Advanced Point Neurons
+(E-GLIF)</em>.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../../../_images/scaffoldIO.png"><img alt="../../../../_images/scaffoldIO.png" src="../../../../_images/scaffoldIO.png" style="width: 373px;" />
+</a>
+</div></blockquote>
+<p><strong>Simulation description</strong></p>
+<p>The olivocerebellar Spiking Neural Network is created in pyNEST. The topology
+is reconstructed based on the cerebellar scaffold rules in
+[<a class="reference external" href="https://doi.org/10.3389/fninf.2019.00037">Casali et al. 2019</a>],
+adding the Olivary nuclei and a subdivision into microcomplexes to the
+original scaffold. Neurons are modelled as E-GLIF with alpha-shaped
+conductance-based synapses [<a class="reference external" href="https://doi.org/10.3389/fninf.2018.00088">Geminiani et al., 2018</a>].
+E-GLIF parameters are specific for each cell type, as optimized in [<a class="reference external" href="https://doi.org/10.3389/fncom.2019.00068">Geminiani et al., 2019</a>].
+Connection delays are obtained from literature values, while connection
+weights are tuned with a trial and error procedure to obtain physiological
+baseline population firing rates. The network is stimulated with sensory-like
+input signals to the Granular layer and the Inferior Olive, mimicking the
+input signals of Eye-Blink Classical Conditioning: a constant Poisson spike
+pattern at 40 Hz to the Granular layer, and a burst at 500 Hz to one nucleus
+of the Inferior Olive. Realistic single neuron dynamics provided by the E-GLIF
+and modular network topology allow to reproduce the complex spiking patterns of
+cerebellar signal encoding, including burst-pause (in Purkinje cells) and
+pause-burst (in Deep Cerebellar Nuclei cells) mechanisms.</p>
+<p><strong>Inputs</strong></p>
+<ul class="simple">
+<li><p>a single hdf5 file (saved in /storage) containing network topology data, i.e. cell positions and connections.</p></li>
+</ul>
+<p>The user can modify the stimulation protocol by changing the parameters in the
+“Defining stimuli” section, namely: the duration of the simulation [ms]; the
+start [ms], end [ms] and frequency [Hz] of each stimulus; the radius [µm]
+of the stimulated area in the Granular layer.</p>
+<p><strong>Output</strong></p>
+<ul class="simple">
+<li><p>Files: .gdf files containing spike times of each network neuron over the simulation duration. The user can also choose to save the .dat files containing the voltage traces (but this would significantly increase the simulation time if whole population are selected)</p></li>
+<li><p>Monitoring: raster plot of spikes for each neuron type, which the user can select, and PSTH</p></li>
+</ul>
+<p><strong>Additional information</strong></p>
+<ul class="simple">
+<li><p>The whole Use Case should take about 40 minutes to be completed, for a volume base of 400 x 400 µm.</p></li>
+<li><p>The BSP foundation software used in the notebook is pyNEST</p></li>
+<li><p>Single neuron and network parameters are the same reported in [<a class="reference external" href="https://doi.org/10.3389/fncom.2019.00068">Geminiani et al., 2019</a>]</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>EXAMPLE</strong></p>
+<blockquote>
+<div><p>Providing the olivocerebellar scaffold a Poisson spike train (40 Hz frequency, 260 ms duration) to the Granular layer
+and a co-terminating burst (500 Hz frequency, 10 ms duration) to the Olivary nucleus connected to the first microcomplex,
+the following PSTH should be generated for Purkinje cells in the first microcomplex (vertical lines representing
+start of first and second stimulus, end of both stimuli):</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../../../_images/PSTH_PC1.png"><img alt="../../../../_images/PSTH_PC1.png" src="../../../../_images/PSTH_PC1.png" style="width: 700px;" />
+</a>
+</div></blockquote>
+<p>with the first stimulus causing an increased population firing rate and the burst causing a complex spike (burst-pause).</p>
+<p>The bursting spiking pattern is not present in the Purkinje cells of the second microcomplex, which receive only the first stimulus
+thanks to the modular connectivity of the network:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../../../_images/PSTH_PC2.png"><img alt="../../../../_images/PSTH_PC2.png" src="../../../../_images/PSTH_PC2.png" style="width: 700px;" />
+</a>
+</div></blockquote>
+<p>with the complex spike not occurring.</p>
+</div></blockquote>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, EBRAINS Cellular Level Simulation Interactive members.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

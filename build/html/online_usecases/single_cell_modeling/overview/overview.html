@@ -1,0 +1,267 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Overview &mdash; cls-interactive 0.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/style.css?v=8eff675d" />
+      <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
+
+  
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=10f1778b"></script>
+      <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+      <script src="../../../_static/load_ga.js"></script>
+      <script src="../../../_static/collapse.js"></script>
+      <script src="../../../_static/banner.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Hippocampus" href="../hippocampus/hippocampus.html" />
+    <link rel="prev" title="Single Cell Building" href="../single_cell_modeling.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            cls-interactive
+              <img src="../../../_static/cls-banner.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hpc_status_monitor/hpc_status_monitor.html">HPC Status Monitor</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../online_usecases.html">Online Use Cases</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../trace_analysis/trace_analysis.html">Trace Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../morphology_analysis/morphology_analysis.html">Morphology Analysis</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../single_cell_modeling.html">Single Cell Building</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Overview</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#hippocampal-neurons">Hippocampal neurons</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../hippocampus/hippocampus.html">Hippocampus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../cerebellum/cerebellum.html">Cerebellum</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../single_cell_in_silico/single_cell_in_silico.html">Single Cell <em>In Silico</em> Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../small_circuit_in_silico_experiments/small_circuit_in_silico_experiments.html">Small Circuit <em>In Silico</em> Experiments</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">cls-interactive</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../online_usecases.html">Online Use Cases</a></li>
+          <li class="breadcrumb-item"><a href="../single_cell_modeling.html">Single Cell Building</a></li>
+      <li class="breadcrumb-item active">Overview</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/online_usecases/single_cell_modeling/overview/overview.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="overview">
+<span id="scm-overview"></span><h1>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h1>
+<p>The Single Cell Building Use Cases show practical examples of how to obtain a
+single cell model of morphologically and biophysically detailed neurons
+exploiting the Blue Brain Python Optimization Library (BluePyOpt, Van Geit
+W <em>et al.</em>, 2016, <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4896051/#">Front. Neuroinform</a>. 10:17. doi: <a class="reference external" href="http://journal.frontiersin.org/article/10.3389/fninf.2016.00017/full">10.3389/fninf.2016.00017</a>).</p>
+<p>All Use Cases in this section use the current, public, version of the
+BluePyOpt. However, the different scientists implementing an optimization for
+a specific cell have used their own organization for the configuration files.</p>
+<section id="hippocampal-neurons">
+<span id="id1"></span><h2>Hippocampal neurons<a class="headerlink" href="#hippocampal-neurons" title="Link to this heading"></a></h2>
+<p>For the Use Cases referring to hippocampal cells, the different Use Cases will
+guide you through the most appropriate workflow, depending on your goal.
+In general, they are organized around two different possibilities of
+increasing complexity:</p>
+<ol class="arabic simple">
+<li><p>Rebuild an existing single cell model</p></li>
+<li><p>Build your own cell model using HBP data</p></li>
+</ol>
+<p>They differ in the amount and type of information that is required to
+configure and run an optimization. Below is a short description of all files
+required for an optimization run for hippocampal cells. In the simplest case,
+all required files will be automatically copied into your Collab, and you just
+have to select items, push buttons, and wait to collect the results.
+You may want to change something (initial parameters, channel distribution,
+electrophysiological features, etc), but this requires more detailed knowledge.</p>
+<p>To run the optimization, you need to have a morphology, a set of mod files for
+the ion channel or special mechanism kinetics, the stimulation protocols to be
+used (typically step current clamp stimuli), and the electrophysiological
+features you would like to use as a reference for the optimization.</p>
+<p>The above information is contained in four self-consistent JSON files. Self-consistency is ensured by starting all json files used for a specific optimization with the same string, as shown below.</p>
+<section id="morph-json">
+<h3>morph.json<a class="headerlink" href="#morph-json" title="Link to this heading"></a></h3>
+<p>Defines the Neurolucida ASCII file containing the 3D reconstruction to be used for the optimization.
+A typical file looks like this:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;INT_cAC_noljp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;011017HP2.asc&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Where the first string is the optimization name, arbitrarily chosen by the user, and the second one is the name of the morphology file.</p>
+</section>
+<section id="features-json">
+<h3>features.json<a class="headerlink" href="#features-json" title="Link to this heading"></a></h3>
+<p>Contains the electrophysiological characteristics (spike event features, spike shape features, voltage features etc.) that will be used as a reference by the optimization process. In general, this file can be automatically generated by the eFEL GUI app. The different sections list the various features of interest.
+A typical section looks like this:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;INT_cAC_noljp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;step_-0.4&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;soma&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;voltage_deflection&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">-19.772462606879138</span><span class="p">,</span><span class="w">  </span><span class="mf">2.0331488835160232</span><span class="p">],</span>
+<span class="w">                </span><span class="nt">&quot;voltage_base&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">-74.617595464571281</span><span class="p">,</span><span class="w">  </span><span class="mf">2.1406043489404434</span><span class="w"> </span><span class="p">]</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Again, the first string is the name of the optimization, and in this case the user was interested in optimizing the <em>voltage_deflection</em> and <em>voltage_base</em> measured at the soma under a somatic current injection of -0.4 nA.</p>
+</section>
+<section id="protocols-json">
+<h3>protocols.json<a class="headerlink" href="#protocols-json" title="Link to this heading"></a></h3>
+<p>Defines the stimulation protocols that should be used for the optimization. This file is also automatically created by the eFEL GUI app, and it is matched with the information contained in the <strong>features.json</strong> file.
+A typical section looks like this:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;INT_cAC_noljp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;step_-0.4&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;stimuli&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="nt">&quot;delay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">531.0</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;amp&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">-0.4</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;duration&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">400.0</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;totduration&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1131.0</span>
+<span class="w">                </span><span class="p">},</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="nt">&quot;delay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;amp&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;duration&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1131.0</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;totduration&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1131.0</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">]</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="parameters-json">
+<h3>parameters.json<a class="headerlink" href="#parameters-json" title="Link to this heading"></a></h3>
+<p>This is where a user can strongly determine the quality of the optimization.
+In this file, active and passive properties (and their distribution) are
+defined.</p>
+<p>There are four self-explanatory main blocks defining: 1) the channels to be
+used in the different regions of a neuron (“mechanisms”), 2) their non-uniform
+distribution (“distributions”), 3) which parameters should be fixed (“fixed”)
+and 4) which parameters must be optimized (“optimized”).
+Mechanism and parameter names depend on the set of mod files the user
+chooses to equip the cell with.
+A typical section looks like this:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;INT_cAC_noljp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;mechanisms&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;all&quot;</span><span class="p">:</span><span class="w">      </span><span class="p">[</span><span class="s2">&quot;pas&quot;</span><span class="p">,</span><span class="s2">&quot;kdrb&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;nax&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;kap&quot;</span><span class="p">],</span>
+<span class="w">            </span><span class="nt">&quot;somatic&quot;</span><span class="p">:</span><span class="w">  </span><span class="p">[</span><span class="s2">&quot;kdb&quot;</span><span class="p">,</span><span class="s2">&quot;kmb&quot;</span><span class="p">],</span>
+<span class="w">            </span><span class="nt">&quot;axonal&quot;</span><span class="p">:</span><span class="w">   </span><span class="p">[</span><span class="s2">&quot;kmb&quot;</span><span class="p">],</span>
+<span class="w">            </span><span class="nt">&quot;allnoaxon&quot;</span><span class="p">:[</span><span class="s2">&quot;hd&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;can&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;cal&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;cat&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;kca&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;cacumb&quot;</span><span class="p">,</span><span class="s2">&quot;cagk&quot;</span><span class="p">]</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="nt">&quot;distributions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="nt">&quot;fixed&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;global&quot;</span><span class="p">:</span><span class="w">    </span><span class="p">[[</span><span class="s2">&quot;v_init&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">-80</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;celsius&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">34</span><span class="p">]],</span>
+<span class="w">            </span><span class="nt">&quot;all&quot;</span><span class="p">:</span><span class="w">       </span><span class="p">[[</span><span class="s2">&quot;cm&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;secvar&quot;</span><span class="p">],[</span><span class="s2">&quot;ena&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;secvar&quot;</span><span class="p">],[</span><span class="s2">&quot;ek&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">-90</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;secvar&quot;</span><span class="p">]]</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="nt">&quot;optimized&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">             </span><span class="nt">&quot;axonal&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                </span><span class="p">[</span><span class="s2">&quot;gbar_nax&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">0.025</span><span class="p">,</span><span class="w"> </span><span class="mf">0.15</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;uniform&quot;</span><span class="w"> </span><span class="p">],</span>
+<span class="w">                </span><span class="p">[</span><span class="s2">&quot;gkdrbar_kdrb&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">0.01</span><span class="p">,</span><span class="w"> </span><span class="mf">0.08</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;uniform&quot;</span><span class="w"> </span><span class="p">],</span>
+<span class="w">                </span><span class="p">[</span><span class="s2">&quot;gkabar_kap&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">0.001</span><span class="p">,</span><span class="w"> </span><span class="mf">0.04</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;uniform&quot;</span><span class="w"> </span><span class="p">],</span>
+<span class="w">                </span><span class="p">[</span><span class="s2">&quot;gbar_kmb&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">0.004</span><span class="p">,</span><span class="w"> </span><span class="mf">0.05</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;uniform&quot;</span><span class="w"> </span><span class="p">],</span>
+<span class="w">                </span><span class="p">[</span><span class="s2">&quot;Ra&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w"> </span><span class="mi">300</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;secvar&quot;</span><span class="p">],</span>
+<span class="w">                </span><span class="p">[</span><span class="s2">&quot;g_pas&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">1e-6</span><span class="p">,</span><span class="w"> </span><span class="mf">8e-5</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;uniform&quot;</span><span class="w"> </span><span class="p">],</span>
+<span class="w">                </span><span class="p">[</span><span class="s2">&quot;e_pas&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">-95</span><span class="p">,</span><span class="w"> </span><span class="mi">-75</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;uniform&quot;</span><span class="w"> </span><span class="p">]</span>
+<span class="w">           </span><span class="p">],</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The BluePyOpt must be configured to set the search algorithm. This is done by
+defining the offspring size and the max number of generations.
+Finally, these Use Cases require computing resources on a HPC system. In order
+to carry out the optimization, a user must have an account on the Neuroscience
+Gateway or on one of the HPC systems supporting the Brain Simulation Platform
+activity, such as CINECA or JSC.</p>
+<p>For details on NSG see <a href="https://www.nsgportal.org/" target="_blank">Neuroscience Gateway</a>.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../single_cell_modeling.html" class="btn btn-neutral float-left" title="Single Cell Building" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../hippocampus/hippocampus.html" class="btn btn-neutral float-right" title="Hippocampus" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, EBRAINS Cellular Level Simulation Interactive members.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

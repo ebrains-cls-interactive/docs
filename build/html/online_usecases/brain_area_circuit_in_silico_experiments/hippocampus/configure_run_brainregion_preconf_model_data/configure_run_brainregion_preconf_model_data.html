@@ -1,0 +1,299 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configure and run a rat hippocampus CA1 region using preconfigured HBP model and data &mdash; cls-interactive 0.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/style.css?v=8eff675d" />
+      <link rel="stylesheet" href="../../../../_static/css/style.css" type="text/css" />
+
+  
+      <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../_static/documentation_options.js?v=10f1778b"></script>
+      <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+      <script src="../../../../_static/load_ga.js"></script>
+      <script src="../../../../_static/collapse.js"></script>
+      <script src="../../../../_static/banner.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            cls-interactive
+              <img src="../../../../_static/cls-banner.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting_started/getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hpc_status_monitor/hpc_status_monitor.html">HPC Status Monitor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../online_usecases.html">Online Use Cases</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">cls-interactive</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Configure and run a rat hippocampus CA1 region using preconfigured HBP model and data</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../_sources/online_usecases/brain_area_circuit_in_silico_experiments/hippocampus/configure_run_brainregion_preconf_model_data/configure_run_brainregion_preconf_model_data.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="configure-and-run-a-rat-hippocampus-ca1-region-using-preconfigured-hbp-model-and-data">
+<span id="conf-run-hippo-pre"></span><h1>Configure and run a rat hippocampus CA1 region using preconfigured HBP model and data<a class="headerlink" href="#configure-and-run-a-rat-hippocampus-ca1-region-using-preconfigured-hbp-model-and-data" title="Link to this heading"></a></h1>
+<p>This use case allows a user to configure and launch a simulation on HBP HPAC infrastructure using <a class="reference external" href="https://www.unicore.eu/">Unicore API</a>.</p>
+<section id="run-simulations">
+<h2>Run Simulations<a class="headerlink" href="#run-simulations" title="Link to this heading"></a></h2>
+<p><img alt="run_simulation" src="../../../../_images/run_simulation.png" /></p>
+<p>In the <strong>Section 1)</strong> you can configure:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Population</span></code>: Population of cells to be loaded by the simulator.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Duration</span></code>: Time length of stimulus duration, given in
+milliseconds(ms)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">View</span> <span class="pre">Simulations</span></code>: From here you can see all the history of
+simulations (explained in page <a class="reference external" href="#view-simulations">View Simulations</a>)</p></li>
+</ul>
+<p>In the <strong>Section 2)</strong> you can configure:</p>
+<ul class="simple">
+<li><p>Using the buttons <img alt="edit_buttons" src="../../../../_images/edit_buttons.png" /> you can <code class="docutils literal notranslate"><span class="pre">add</span></code>, <code class="docutils literal notranslate"><span class="pre">edit</span></code> or <code class="docutils literal notranslate"><span class="pre">remove</span></code> new stimulus/report (You can also
+double-click on the timeline to add or edit)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Stimulations</span></code> configuration:</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p><em>Population</em>: Name of a population to receive the stimulation</p></li>
+<li><p><em>Delay</em>: Time when the stimulus commences, given in
+milliseconds (ms)</p></li>
+<li><p><em>Duration</em>: Time length of stimulus duration, given in
+milliseconds (ms)</p></li>
+<li><p><em>Pattern</em>: Type of stimulus to inject</p></li>
+<li><p><em>AmpStart</em>: The amount of current initially injected when the stimulus activates (nA)</p></li>
+<li><p><em>AmpEnd</em>: The final current when a stimulus concludes. Used by Linear (nA)</p></li>
+</ul>
+<blockquote>
+<div><p><img alt="edit_stimulus" src="../../../../_images/edit_stimulus.png" /></p>
+</div></blockquote>
+</div></blockquote>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Reports</span></code></p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p><em>Population</em>: Defines the population from where the data will be reported.</p></li>
+<li><p><em>StartTime</em>: Time to start reporting (ms)</p></li>
+<li><p><em>EndTime</em>: Time to stop reporting (ms)</p></li>
+<li><p><em>Compartments</em>: Which compartment(s) to report [Soma = compartment, Soma + Dendrites = AllCompartments]</p></li>
+<li><p><em>ReportOn</em>: What to report [Voltage, Calcium Concentration, Current Summation (for LFP)]</p></li>
+<li><p><em>dt</em>: The frequency of reporting in milliseconds (ms)</p></li>
+<li><p><em>Format</em>: Defines the report output format [Binary (.bbp), ASCII, HDF5]</p></li>
+</ul>
+<blockquote>
+<div><p><img alt="edit_report" src="../../../../_images/edit_report.png" /></p>
+</div></blockquote>
+</div></blockquote>
+<p>In the <strong>Section 3)</strong> you can modify the <strong>connection</strong> between populations on the circuit specifying:</p>
+<ul>
+<li><p><em>Source:</em> This target defines presynaptic cells</p></li>
+<li><p><em>Destination:</em> This target defines postsynaptic cells</p></li>
+<li><p><em>Delay (ms):</em> A delay after which the modifications are applied</p></li>
+<li><p><em>Weight:</em> A scaling factor to adjust the synaptic strength (default = 1)</p></li>
+<li><p><em>MinisFreq:</em> The Poisson mean rate for spontaneous synaptic activity</p></li>
+<li><p><em>Synapse Configuration:</em> Snippets of hoc code to manipulate additional synaptic parameters</p>
+<p><img alt="connection_manipulation" src="../../../../_images/connection_manipulation.png" /></p>
+<ul>
+<li><p>If you want to modify a synpase just click <em>configure</em> and a pop-up will appear</p>
+<p><img alt="synapse_configurator" src="../../../../_images/synapse_configurator.png" /></p>
+</li>
+</ul>
+</li>
+</ul>
+<p>In the <strong>Section 4)</strong>  you can modify the <strong>projection</strong> going to the circuit</p>
+<ul>
+<li><p><em>Weight:</em> A scaling factor to adjust the synaptic strength (default = 1)</p></li>
+<li><p><em>Minis Projection:</em> Generate inputs based on spontaneous synaptic activity
+- <em>Frequency (Hz):</em> Frequency of the spontaneous synaptic activity</p></li>
+<li><p><em>Spike Replay Projection:</em> Generate inputs based on a given distribution</p>
+<ul>
+<li><p><em>Target:</em> From which cells the projection is coming</p></li>
+<li><p><em>Frequency (Hz):</em> The input mean rate</p></li>
+<li><p><em>Stimulus Type:</em> Type of distribution (default = Poisson)</p>
+<p><img alt="projection_manipulation" src="../../../../_images/projection_manipulation.png" /></p>
+</li>
+<li><p>If you want to modify a projection just click <em>configure</em> and a pop-up will appear</p>
+<p><img alt="projection_edition" src="../../../../_images/projection_edition.png" /></p>
+</li>
+</ul>
+</li>
+<li><p>Launching a simulation will open a form to configure the parameters before executing the jobs on the supercomputer</p></li>
+</ul>
+<blockquote>
+<div><ul>
+<li><p><em>Title</em>: The title of the job</p></li>
+<li><p><em>Computer</em>: Which supercomputer will run the simulation.</p></li>
+<li><p><em>Project</em>: (optional) If you want to specify under which project the simulation should be run</p></li>
+<li><p><em>Nodes</em>: The amount of nodes that will be allocated and used for the simulation</p></li>
+<li><p><em>Run Time</em>: The maximum time before timeout (in seconds).</p></li>
+<li><p><em>CPUs Per Node</em>: Number of CPUs that are going to be used for the simulation.</p></li>
+<li><p><em>Total Processors</em>: The total amount (nodes * cpus).</p></li>
+<li><p><em>Preview BlueConfig</em>: This will open a new tab with the complete configuration that is going to be sent</p>
+<p><img alt="run_simulation_form" src="../../../../_images/run_simulation_form.png" /></p>
+</li>
+</ul>
+</div></blockquote>
+</section>
+<hr class="docutils" />
+<section id="id1">
+<h2>View Simulations<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<p><img alt="view_simulation" src="../../../../_images/view_simulation.png" /></p>
+<p>In the <strong>Section 1)</strong> you are able to:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Filter</span></code> by <em>Title</em>, <em>Status</em>, <em>Supercomputer</em>, <em>Project</em></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Import</span> <span class="pre">Simulation</span></code> providing the full path to simulation folder on that HPC</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Launch</span> <span class="pre">Simulation</span></code>: this goes back to <em>Configure and Launch
+simuation</em> page</p></li>
+</ul>
+<p>In the <strong>Section 2)</strong> you are able to:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Check</span> <span class="pre">status</span></code> of Simulation and Analysis steps:</p>
+<ul class="simple">
+<li><p>ready <img alt="done" src="../../../../_images/done.png" /></p></li>
+<li><p>queue <img alt="sync" src="../../../../_images/sync.png" /></p></li>
+<li><p>aborted <img alt="block" src="../../../../_images/block.png" /></p></li>
+<li><p>failed <img alt="error" src="../../../../_images/error.png" /></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">View</span></code> the details page of the simulation.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Analyse</span></code> will open a form to configure the parameters before executing the analysis on the supercomputer</p>
+<ul>
+<li><p><em>Title</em>: Title of the job</p></li>
+<li><p><em>Report</em>: Report created by the simulation</p></li>
+<li><dl class="simple">
+<dt><em>Raster / Traces</em>: (Basic Analysis) Type of analysis to run</dt><dd><ul class="simple">
+<li><p><em>Whole Population</em>: Population cells</p></li>
+<li><p><em>Cells GIDs</em>: Specify single GID and/or ranges of GIDs</p></li>
+<li><p><em>Random Cells</em>: Amount of random cells (from the report) to analyze</p></li>
+</ul>
+</dd>
+</dl>
+<p><img alt="run_analysis_form" src="../../../../_images/run_analysis_form.png" /></p>
+</li>
+<li><dl class="simple">
+<dt><em>LFP</em>: (Advanced Analysis) Type of analysis to run</dt><dd><ul class="simple">
+<li><p><em>Population</em>: Population cells</p></li>
+<li><p><em>Plots</em>: Type of plots to get as a result of the LFP calculation</p></li>
+<li><p><em>Duration</em>: Start and End duration of the LFP calculation</p></li>
+<li><p><em>Points</em>: Either write or upload a file with points to calculate LFP</p></li>
+</ul>
+</dd>
+</dl>
+<p><img alt="run_lfp_analysis_form" src="../../../../_images/run_lfp_analysis_form.png" /></p>
+</li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Delete</span></code> the simulation</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="simulation-details">
+<h2>Simulation Details<a class="headerlink" href="#simulation-details" title="Link to this heading"></a></h2>
+<p><img alt="simulation_details" src="../../../../_images/simulation_details.png" /></p>
+<p>In the <strong>Section 1)</strong> you are able to see:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Simulation</span></code> with the following information</p>
+<ul>
+<li><p><em>Name</em></p></li>
+<li><p><em>ID</em></p></li>
+<li><p><em>Status</em></p></li>
+<li><p><em>Submission Date</em></p></li>
+</ul>
+</li>
+</ul>
+<p>In the <strong>Section 2)</strong> you are able to see:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><em>Analysis</em>: Plots of the analysis will be shown here</p></li>
+<li><p><em>BlueConfig</em>: The configuration that was sent to run the simulation</p></li>
+<li><p><em>Files</em>: List of files that the simulation produced</p></li>
+<li><p><em>Technical Logs</em>:</p>
+<ul>
+<li><p><em>Unicore Logs</em></p></li>
+<li><p><em>Stderr</em>: Logs of the simulation</p></li>
+<li><p><em>Stdout</em>: Output information of the simulation</p></li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
+<p>The <code class="docutils literal notranslate"><span class="pre">Analysis</span></code> section shows the different analyses the user has run</p>
+<blockquote>
+<div><p><img alt="simulation_details_analysis" src="../../../../_images/simulation_details_analysis.png" /></p>
+</div></blockquote>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, EBRAINS Cellular Level Simulation Interactive members.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

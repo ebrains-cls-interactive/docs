@@ -1,0 +1,335 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Synaptic events fitting with user model &mdash; cls-interactive 0.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/style.css?v=8eff675d" />
+      <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
+
+  
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=10f1778b"></script>
+      <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+      <script src="../../../_static/load_ga.js"></script>
+      <script src="../../../_static/collapse.js"></script>
+      <script src="../../../_static/banner.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            cls-interactive
+              <img src="../../../_static/cls-banner.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hpc_status_monitor/hpc_status_monitor.html">HPC Status Monitor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../online_usecases.html">Online Use Cases</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">cls-interactive</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Synaptic events fitting with user model</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/online_usecases/trace_analysis/syn_events_fituser_mod/syn_events_fituser_mod.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="synaptic-events-fitting-with-user-model">
+<span id="syn-events-fit-user-mod"></span><h1>Synaptic events fitting with user model<a class="headerlink" href="#synaptic-events-fitting-with-user-model" title="Link to this heading"></a></h1>
+<p>This Use Case allows a user to fit synaptic events using user’s data and model.</p>
+<p>Selecting this use case, two Jupyter Notebooks are cloned in a private existing/new Collab.
+The cloned Notebooks are:</p>
+<section id="synaptic-events-fitting-with-a-user-model-config">
+<h2>Synaptic events fitting with a user model - Config<a class="headerlink" href="#synaptic-events-fitting-with-a-user-model-config" title="Link to this heading"></a></h2>
+<p>It allows the user to:</p>
+<ol class="arabic simple">
+<li><p>Select a local experimental file</p></li>
+</ol>
+<div class="bsp-container-center docutils container">
+<a class="reference internal image-reference" href="../../../_images/select_exp1.png"><img alt="../../../_images/select_exp1.png" class="align-center" src="../../../_images/select_exp1.png" style="width: 450px;" />
+</a>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>At this time, the only accepted format for the experimental file is a text file with time in the first column and individual traces in successive columns. All columns must be of the same length</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Select a local mod file</p></li>
+</ol>
+<div class="bsp-container-center docutils container">
+<a class="reference internal image-reference" href="../../../_images/select_mod.png"><img alt="../../../_images/select_mod.png" class="align-center" src="../../../_images/select_mod.png" style="width: 450px;" />
+</a>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>We assume that the user knows what we are talking about here, and that the
+uploaded mod file has been already tested by the user in preliminary
+simulations. The program does not perform checks on this. An invalid file will
+result in errors at NEURON compilation time</p>
+<p>All other parameters that are not fitted have their default value as
+defined in the mod file.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Fill in the form with the values needed to write a configuration file: the
+number of traces in the experimental file, the protocol (voltage clamp
+amplitude and reversal potential of the synapse), the name of the parameters
+to be fitted, their initial values and the allowed variation range,
+exclusion rules, and an optional set of dependencies for other parameters.
+Typical values are shown in the figure below</p></li>
+</ol>
+<div class="bsp-container-center docutils container">
+<a class="reference internal image-reference" href="../../../_images/fill_form1.png"><img alt="../../../_images/fill_form1.png" class="align-center" src="../../../_images/fill_form1.png" style="width: 450px;" />
+</a>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="bsp-container-center docutils container">
+<a class="reference internal image-reference" href="../../../_images/initial_values.png"><img alt="../../../_images/initial_values.png" class="align-center" src="../../../_images/initial_values.png" style="width: 450px;" />
+</a>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="bsp-container-center docutils container">
+<a class="reference internal image-reference" href="../../../_images/dependencies1.png"><img alt="../../../_images/dependencies1.png" class="align-center" src="../../../_images/dependencies1.png" style="width: 450px;" />
+</a>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Configure the parameters of the optimization job: the title of the job, the number of nodes, the number of cores and the runtime. Run the fitting procedure using UNICORE authentication on JURECA (booster partition), GALILEO, or on NSG (using your account), and check the job status.</p></li>
+</ol>
+<p>On JURECA the number of nodes, number of CPUs per node and runtime are set by default to 2, 24 and 10m respectively</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>On GALILEO the number of nodes, number of CPUs per node and runtime are set by default to 2, 36 and 10m respectively</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The user needs to be aware of the limitations imposed by each HPC system on resources</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>On NSG the number of nodes, number of cores and runtime are set by default to 2, 24 and 0.5 (hours) respectively. The maximum number of nodes available per job is 72. If you require more than 72 nodes please contact <a class="reference external" href="mailto:nsghelp&#37;&#52;&#48;sdsc&#46;edu">nsghelp<span>&#64;</span>sdsc<span>&#46;</span>edu</a>. The maximum number of cores required per node is 24.</p>
+<div class="bsp-container-center docutils container">
+<a class="reference internal image-reference" href="../../../_images/submission_process_021.png"><img alt="../../../_images/submission_process_021.png" class="align-center" src="../../../_images/submission_process_021.png" style="width: 650px;" />
+</a>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Note that when the job is submitted through UNICORE, the user can specify the project to use to submit the job on the HPC.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="bsp-container-center docutils container">
+<a class="reference internal image-reference" href="../../../_images/unicore2.png"><img alt="../../../_images/unicore2.png" class="align-center" src="../../../_images/unicore2.png" style="width: 300px;" />
+</a>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Note that when the job is submitted through NSG, the user can see the
+submission date converted to CET time next to the status of the job. This will
+be useful in the analysis notebook in order to fetch the job.</p>
+<p>The user can choose to fit all experimental traces 100 times, a single trace 20
+times or use a demo version where a trace is fitted 5 times. For the single
+trace and the demo version the user can choose the trace to be fitted.</p>
+<p>Once the job is completed, the output files will be in the Collab storage under
+different directories, according to the system used.</p>
+<p>JURECA: results are saved under the resultsJureca/jobtitle_fitting_submissionTime folder.</p>
+<p>GALILEO: results are saved under the resultsGalileo/jobtitle_fitting_submissionTime folder.</p>
+<p>NSG results are saved under the resultsNSG/jobtitle_fitting_submissionTime folder.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>If you are interested in the code, click on the “Click here to toggle on/off the source code” button</p></li>
+</ol>
+<div class="bsp-container-center docutils container">
+<a class="reference internal image-reference" href="../../../_images/toggle_button4.png"><img alt="../../../_images/toggle_button4.png" class="align-center" src="../../../_images/toggle_button4.png" style="width: 300px;" />
+</a>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="6">
+<li><p>If you want to start a new fitting from the beginning, click on the “Click here to start a new fit” button.</p></li>
+</ol>
+<div class="bsp-container-center docutils container">
+<a class="reference internal image-reference" href="../../../_images/Restart2.png"><img alt="../../../_images/Restart2.png" class="align-center" src="../../../_images/Restart2.png" style="width: 300px;" />
+</a>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="synaptic-events-fitting-with-user-model-analysis">
+<h2>Synaptic events fitting with user model - Analysis<a class="headerlink" href="#synaptic-events-fitting-with-user-model-analysis" title="Link to this heading"></a></h2>
+<p>This Jupyter Notebook allows the user to fetch the fitting results from the
+storage of the HPC system to the storage of the Collab or to analyze the
+optimized parameters. If the user wants to view an analysis of simulations that
+are already in the storage of the Collab, (s)he can skip the
+‘View simulations’ tab and go directly to the ‘View analysis’ tab.</p>
+<div class="bsp-container-center docutils container">
+<a class="reference internal image-reference" href="../../../_images/viewsim1.png"><img alt="../../../_images/viewsim1.png" class="align-center" src="../../../_images/viewsim1.png" style="width: 700px;" />
+</a>
+</div>
+<p>In the ‘View simulations’ tab, the user can visualize the Name/ID, status,
+the submission date of the simulations submitted on the HPC systems and (s)he
+can obtain an output of successfully completed jobs.</p>
+<div class="bsp-container-center docutils container">
+<a class="reference internal image-reference" href="../../../_images/viewsimulations.png"><img alt="../../../_images/viewsimulations.png" class="align-center" src="../../../_images/viewsimulations.png" style="width: 700px;" />
+</a>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="bsp-container-center docutils container">
+<a class="reference internal image-reference" href="../../../_images/viewsimulations2.png"><img alt="../../../_images/viewsimulations2.png" class="align-center" src="../../../_images/viewsimulations2.png" style="width: 700px;" />
+</a>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="bsp-container-center docutils container">
+<a class="reference internal image-reference" href="../../../_images/viewsimulations3.png"><img alt="../../../_images/viewsimulations3.png" class="align-center" src="../../../_images/viewsimulations3.png" style="width: 700px;" />
+</a>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>In the ‘View analysis’ tab, the user can analyze the optimized parameters for
+default data and a mod file combination or browse through the optimized
+parameters available in the Collab storage.</p>
+<div class="bsp-container-center docutils container">
+<a class="reference internal image-reference" href="../../../_images/viewanalysis1.png"><img alt="../../../_images/viewanalysis1.png" class="align-center" src="../../../_images/viewanalysis1.png" style="width: 700px;" />
+</a>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The user can visualize the data in table form, a box plot and the best fit.</p>
+<ol class="arabic simple">
+<li><p>The table of results (sorted in ascending order by the fitting error).</p></li>
+</ol>
+<div class="bsp-container-center docutils container">
+<a class="reference internal image-reference" href="../../../_images/results_table.png"><img alt="../../../_images/results_table.png" class="align-center" src="../../../_images/results_table.png" style="width: 700px;" />
+</a>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>The boxplot of the normalized results.</p></li>
+</ol>
+<div class="bsp-container-center docutils container">
+<a class="reference internal image-reference" href="../../../_images/results_box.png"><img alt="../../../_images/results_box.png" class="align-center" src="../../../_images/results_box.png" style="width: 700px;" />
+</a>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>The best fit.</p></li>
+</ol>
+<div class="bsp-container-center docutils container">
+<a class="reference internal image-reference" href="../../../_images/results_fit.png"><img alt="../../../_images/results_fit.png" class="align-center" src="../../../_images/results_fit.png" style="width: 700px;" />
+</a>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<p>If you are interested in the code, click on the “Click here to toggle on/off
+the source code” button.</p>
+<div class="bsp-container-center docutils container">
+<a class="reference internal image-reference" href="../../../_images/toggle_button2.png"><img alt="../../../_images/toggle_button2.png" class="align-center" src="../../../_images/toggle_button2.png" style="width: 300px;" />
+</a>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, EBRAINS Cellular Level Simulation Interactive members.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
