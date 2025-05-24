@@ -1,24 +1,27 @@
+
+
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../../../">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Build your own single hippocampal cell model using HBP data &mdash; cls-interactive 0.2 documentation</title><link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <title>Build your own single hippocampal cell model using HBP data &mdash; cls-interactive 0.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/style.css?v=8eff675d" />
       <link rel="stylesheet" href="../../../../_static/css/style.css" type="text/css" />
-      <link rel="stylesheet" href="../../../../_static/css/style.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../../../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  <script id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../../../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../../../_static/language_data.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-        <script type="text/javascript" src="../../../../_static/load_ga.js"></script>
-        <script type="text/javascript" src="../../../../_static/collapse.js"></script>
-        <script type="text/javascript" src="../../../../_static/banner.js"></script>
+
+  
+      <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../_static/documentation_options.js?v=10f1778b"></script>
+      <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+      <script src="../../../../_static/load_ga.js"></script>
+      <script src="../../../../_static/collapse.js"></script>
+      <script src="../../../../_static/banner.js"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
@@ -31,14 +34,16 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../../index.html" class="icon icon-home"> cls-interactive<img src="../../../../_static/cls-banner.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            cls-interactive
+              <img src="../../../../_static/cls-banner.png" class="logo" alt="Logo"/>
           </a>
-              <div class="version">
-                0.2
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -46,7 +51,6 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../../getting_started/getting_started.html">Getting started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../hpc_status_monitor/hpc_status_monitor.html">HPC Status Monitor</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../../online_usecases.html">Online Use Cases</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../../trace_analysis/trace_analysis.html">Trace Analysis</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../morphology_analysis/morphology_analysis.html">Morphology Analysis</a></li>
@@ -63,7 +67,6 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../../single_cell_in_silico/single_cell_in_silico.html">Single Cell <em>In Silico</em> Experiments</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../small_circuit_in_silico_experiments/small_circuit_in_silico_experiments.html">Small Circuit <em>In Silico</em> Experiments</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../brain_area_circuit_in_silico_experiments/brain_area_circuit_in_silico_experiments.html">Brain area circuit <em>in silico</em> experiments</a></li>
 </ul>
 </li>
 </ul>
@@ -81,11 +84,11 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../../online_usecases.html">Online Use Cases</a> &raquo;</li>
-          <li><a href="../../single_cell_modeling.html">Single Cell Building</a> &raquo;</li>
-          <li><a href="../hippocampus.html">Hippocampus</a> &raquo;</li>
-      <li>Build your own single hippocampal cell model using HBP data</li>
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../online_usecases.html">Online Use Cases</a></li>
+          <li class="breadcrumb-item"><a href="../../single_cell_modeling.html">Single Cell Building</a></li>
+          <li class="breadcrumb-item"><a href="../hippocampus.html">Hippocampus</a></li>
+      <li class="breadcrumb-item active">Build your own single hippocampal cell model using HBP data</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../../_sources/online_usecases/single_cell_modeling/hippocampus/build_scm_hbp/build_scm_hbp.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -95,8 +98,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="build-your-own-single-hippocampal-cell-model-using-hbp-data">
-<span id="build-scm-hbp"></span><h1>Build your own single hippocampal cell model using HBP data<a class="headerlink" href="#build-your-own-single-hippocampal-cell-model-using-hbp-data" title="Permalink to this headline"></a></h1>
+  <section id="build-your-own-single-hippocampal-cell-model-using-hbp-data">
+<span id="build-scm-hbp"></span><h1>Build your own single hippocampal cell model using HBP data<a class="headerlink" href="#build-your-own-single-hippocampal-cell-model-using-hbp-data" title="Link to this heading"></a></h1>
 <p>This Use Case allows a user to configure the
 <a class="reference external" href="http://bluepyopt.readthedocs.io/en/latest/">BluePyOpt</a> to run an
 optimization choosing from HBP data for morphology, channel kinetics, features,
@@ -107,13 +110,14 @@ configuration files from previous optimizations.</p>
 </div>
 <p>By selecting this Use Case, three Jupyter Notebooks are cloned in a private
 existing/new Collab. The cloned Notebooks are:</p>
-<div class="section" id="buildown-single-hippocell-config">
-<h2>BuildOwn Single HippoCell - Config<a class="headerlink" href="#buildown-single-hippocell-config" title="Permalink to this headline"></a></h2>
+<section id="buildown-single-hippocell-config">
+<h2>BuildOwn Single HippoCell - Config<a class="headerlink" href="#buildown-single-hippocell-config" title="Link to this heading"></a></h2>
 <p>This allows the user to:</p>
 <p>1 Choose and visualize an existing morphology from HBP data (the name and type
 of morphology are listed):</p>
 <div class="bsp-container-center docutils container">
-<a class="reference internal image-reference" href="../../../../_images/byohd_browseall.png"><img alt="../../../../_images/byohd_browseall.png" class="align-right" src="../../../../_images/byohd_browseall.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/byohd_browseall.png"><img alt="../../../../_images/byohd_browseall.png" class="align-right" src="../../../../_images/byohd_browseall.png" style="width: 600px;" />
+</a>
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -122,7 +126,8 @@ of morphology are listed):</p>
 the chosen morphology; the list includes those available for the selected
 morphology:</p>
 <div class="bsp-container-center docutils container">
-<a class="reference internal image-reference" href="../../../../_images/byohd_chose.png"><img alt="../../../../_images/byohd_chose.png" class="align-right" src="../../../../_images/byohd_chose.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/byohd_chose.png"><img alt="../../../../_images/byohd_chose.png" class="align-right" src="../../../../_images/byohd_chose.png" style="width: 500px;" />
+</a>
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -131,7 +136,8 @@ morphology:</p>
 the optimization process (“Features” tab); they cannot be changed; they are
 taken from the ‘features.json’ file.</p>
 <div class="bsp-container-center docutils container">
-<a class="reference internal image-reference" href="../../../../_images/byohd_visualize.png"><img alt="../../../../_images/byohd_visualize.png" class="align-right" src="../../../../_images/byohd_visualize.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/byohd_visualize.png"><img alt="../../../../_images/byohd_visualize.png" class="align-right" src="../../../../_images/byohd_visualize.png" style="width: 600px;" />
+</a>
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -140,7 +146,8 @@ taken from the ‘features.json’ file.</p>
 tab). The user can change the values and save them by using the “Save
 new parameters” button:</p>
 <div class="bsp-container-center docutils container">
-<a class="reference internal image-reference" href="../../../../_images/byohd_change.png"><img alt="../../../../_images/byohd_change.png" class="align-right" src="../../../../_images/byohd_change.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/byohd_change.png"><img alt="../../../../_images/byohd_change.png" class="align-right" src="../../../../_images/byohd_change.png" style="width: 600px;" />
+</a>
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -158,7 +165,8 @@ respectively.</p>
 <p>7 Log in to NSG (Neuroscience Gateway) by inserting his/her username and
 password and clicking on the “Login NSG” button:</p>
 <div class="bsp-container-center docutils container">
-<a class="reference internal image-reference" href="../../../../_images/byohd_login.png"><img alt="../../../../_images/byohd_login.png" class="align-right" src="../../../../_images/byohd_login.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/byohd_login.png"><img alt="../../../../_images/byohd_login.png" class="align-right" src="../../../../_images/byohd_login.png" style="width: 300px;" />
+</a>
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -177,7 +185,8 @@ required per node is 24.</p>
 </div>
 <p>10 the job has been submitted when you see:</p>
 <div class="bsp-container-center docutils container">
-<a class="reference internal image-reference" href="../../../../_images/byohd_submitted.png"><img alt="../../../../_images/byohd_submitted.png" class="align-right" src="../../../../_images/byohd_submitted.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/byohd_submitted.png"><img alt="../../../../_images/byohd_submitted.png" class="align-right" src="../../../../_images/byohd_submitted.png" style="width: 300px;" />
+</a>
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -194,96 +203,107 @@ time).</p>
 </div>
 <p>11 If you are interested in looking at the code, click on “Click here to toggle on/off the source code” button:</p>
 <div class="bsp-container-center docutils container">
-<a class="reference internal image-reference" href="../../../../_images/byohd_toggle.png"><img alt="../../../../_images/byohd_toggle.png" class="align-right" src="../../../../_images/byohd_toggle.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/byohd_toggle.png"><img alt="../../../../_images/byohd_toggle.png" class="align-right" src="../../../../_images/byohd_toggle.png" style="width: 300px;" />
+</a>
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-</div>
-<div class="section" id="buildown-single-hippocell-nsg-job-manager">
-<h2>BuildOwn Single HippoCell - NSG Job Manager<a class="headerlink" href="#buildown-single-hippocell-nsg-job-manager" title="Permalink to this headline"></a></h2>
+</section>
+<section id="buildown-single-hippocell-nsg-job-manager">
+<h2>BuildOwn Single HippoCell - NSG Job Manager<a class="headerlink" href="#buildown-single-hippocell-nsg-job-manager" title="Link to this heading"></a></h2>
 <p>This Jupyter Notebook allows the user to:</p>
 <ol class="arabic simple">
-<li>Log in to the Neuroscience Gateway (NSG) and load the Job Manager by clicking on “Job manager”:</li>
+<li><p>Log in to the Neuroscience Gateway (NSG) and load the Job Manager by clicking on “Job manager”:</p></li>
 </ol>
 <div class="bsp-container-center docutils container">
-<a class="reference internal image-reference" href="../../../../_images/loginNSG.png"><img alt="../../../../_images/loginNSG.png" class="align-right" src="../../../../_images/loginNSG.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/loginNSG.png"><img alt="../../../../_images/loginNSG.png" class="align-right" src="../../../../_images/loginNSG.png" style="width: 300px;" />
+</a>
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <ol class="arabic simple" start="2">
-<li>eopy completed jobs from NSG to the Collab storage by clicking on the arrow icon →</li>
+<li><p>eopy completed jobs from NSG to the Collab storage by clicking on the arrow icon →</p></li>
 </ol>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <ol class="arabic simple" start="3">
-<li>Refresh jobs on the NSG by clicking on <img alt="wait_symbol" src="../../../../_images/wait.png" />:</li>
+<li><p>Refresh jobs on the NSG by clicking on <img alt="wait_symbol" src="../../../../_images/wait.png" />:</p></li>
 </ol>
 <div class="bsp-container-center docutils container">
-<a class="reference internal image-reference" href="../../../../_images/refresh.png"><img alt="../../../../_images/refresh.png" class="align-right" src="../../../../_images/refresh.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/refresh.png"><img alt="../../../../_images/refresh.png" class="align-right" src="../../../../_images/refresh.png" style="width: 600px;" />
+</a>
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>A job can be stored only if completed:</p>
 <div class="bsp-container-center docutils container">
-<a class="reference internal image-reference" href="../../../../_images/completed.png"><img alt="../../../../_images/completed.png" class="align-right" src="../../../../_images/completed.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/completed.png"><img alt="../../../../_images/completed.png" class="align-right" src="../../../../_images/completed.png" style="width: 600px;" />
+</a>
 </div>
-</div>
-<div class="section" id="buildown-single-hippocell-analysis">
-<h2>BuildOwn Single HippoCell - Analysis<a class="headerlink" href="#buildown-single-hippocell-analysis" title="Permalink to this headline"></a></h2>
+</section>
+<section id="buildown-single-hippocell-analysis">
+<h2>BuildOwn Single HippoCell - Analysis<a class="headerlink" href="#buildown-single-hippocell-analysis" title="Link to this heading"></a></h2>
 <p>This Jupyter Notebook allows the user to:</p>
 <ol class="arabic simple">
-<li>Choose either a previous optimization from the HBP GitHub repository; or
+<li><p>Choose either a previous optimization from the HBP GitHub repository; or
 choose the result of your own optimization from the Collab storage, and then
-run an analysis by clicking on “View analysis”</li>
-<li>Save the analysis in the storage by clicking on “Save analysis”. The
+run an analysis by clicking on “View analysis”</p></li>
+<li><p>Save the analysis in the storage by clicking on “Save analysis”. The
 analyses are saved under the BluePyOptAnalysis/username/foldername
-(foldername is the name of the optimization)</li>
+(foldername is the name of the optimization)</p></li>
 </ol>
 <div class="bsp-container-center docutils container">
-<a class="reference internal image-reference" href="../../../../_images/saveAnalysis1.png"><img alt="../../../../_images/saveAnalysis1.png" class="align-right" src="../../../../_images/saveAnalysis1.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/saveAnalysis.png"><img alt="../../../../_images/saveAnalysis.png" class="align-right" src="../../../../_images/saveAnalysis.png" style="width: 600px;" />
+</a>
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <div class="bsp-container-center docutils container">
-<a class="reference internal image-reference" href="../../../../_images/morphology1.png"><img alt="../../../../_images/morphology1.png" class="align-right" src="../../../../_images/morphology1.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/morphology.png"><img alt="../../../../_images/morphology.png" class="align-right" src="../../../../_images/morphology.png" style="width: 500px;" />
+</a>
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <div class="bsp-container-center docutils container">
-<a class="reference internal image-reference" href="../../../../_images/view_save1.png"><img alt="../../../../_images/view_save1.png" class="align-right" src="../../../../_images/view_save1.png" style="width: 250px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/view_save.png"><img alt="../../../../_images/view_save.png" class="align-right" src="../../../../_images/view_save.png" style="width: 250px;" />
+</a>
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <div class="bsp-container-center docutils container">
-<a class="reference internal image-reference" href="../../../../_images/peaks1.png"><img alt="../../../../_images/peaks1.png" class="align-right" src="../../../../_images/peaks1.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/peaks.png"><img alt="../../../../_images/peaks.png" class="align-right" src="../../../../_images/peaks.png" style="width: 500px;" />
+</a>
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <div class="bsp-container-center docutils container">
-<a class="reference internal image-reference" href="../../../../_images/bars1.png"><img alt="../../../../_images/bars1.png" class="align-right" src="../../../../_images/bars1.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/bars.png"><img alt="../../../../_images/bars.png" class="align-right" src="../../../../_images/bars.png" style="width: 500px;" />
+</a>
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <div class="bsp-container-center docutils container">
-<a class="reference internal image-reference" href="../../../../_images/traces1.png"><img alt="../../../../_images/traces1.png" class="align-right" src="../../../../_images/traces1.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/traces.png"><img alt="../../../../_images/traces.png" class="align-right" src="../../../../_images/traces.png" style="width: 500px;" />
+</a>
 </div>
 <ol class="arabic simple" start="3">
-<li>If you are interested in looking at the code, click on “Click here to toggle on/off the source code” button:</li>
+<li><p>If you are interested in looking at the code, click on “Click here to toggle on/off the source code” button:</p></li>
 </ol>
 <div class="bsp-container-center docutils container">
-<a class="reference internal image-reference" href="../../../../_images/toggle1.png"><img alt="../../../../_images/toggle1.png" class="align-right" src="../../../../_images/toggle1.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/toggle.png"><img alt="../../../../_images/toggle.png" class="align-right" src="../../../../_images/toggle.png" style="width: 300px;" />
+</a>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
