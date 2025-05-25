@@ -9,15 +9,14 @@ is organized around several Tools and Services from which you will be guided,
 in a few clicks, to and through scientific selected procedure.
 
 Access to advanced functionalities may be subject to certain conditions, such
-owning an account on one of the HBP associated HPC systems and being part of a
+owning an account on one of the EBRAINS associated HPC systems and being part of a
 project on those.
 Please see the table at the end of this section on the services the 
 CLS Interactive platform provides to different user classes.
 
 First, a short overview is given on working with "Collabs" and on the 
-organization of Use Cases:
+organization of Use Cases.
 
-.. _working-with-collabs:
 
 *****************************************
 Working with Collabs and Jupyter Notebook
@@ -25,63 +24,9 @@ Working with Collabs and Jupyter Notebook
 
 The central scientific working place in the EBRAINS are the "Collabs" 
 (from "Collaboration"). A Collab is an area in which one or more scientists can work on different/multiple tasks.
-An user can create a new Collab, use an existing one, add Use Cases to this Collab, and invite colleagues from the scientific community to collaborate.
+Users can add Use Cases to one of the Collabs they are members of and invite colleagues from the scientific community to collaborate.
 
-Usually, when an user chooses an Use Case to work on, the following screen is presented to let the user select an existing Collab or to create a new Collab:
-
-.. image:: images/collab_select.png
-    :scale: 90%
-    :align: right
-
-
-
-Here you can enter the name of an existing Collab; any matching Collab will be listed and can be selected. Alternatively, you can select 'Create new Collab' which will lead to the following screen:
-
-
-.. image:: images/collab_new.png
-    :scale: 90%
-    :align: right
-
-If you select a Collab in which the chosen Use Case is already present, a dialog will appear that asks if you want to replace the existing content or be redirected to the old Use Case.
-
-.. image:: images/replace.png
-    :scale: 90%
-    :align: right
-
-
-Creating a new Collab is easy:
-
-
-1. Select an meaningful name for the Collab (example: "Henry CA1 Connectome").
-2. Click on "Create" (you can choose if the Collab is visible to anyone (i.e. public), or private. You can change this later anytime).
-3. The actual notebook or GUI of the Use Case you initially selected should open up.
-
-|
-
-A new Collab will open with your Use Case(s) and several options:
-
-|
-
-.. image:: images/collab_options.png
-    :scale: 90%
-    :align: right
-
-|
-
-Here, you have different possibilities to configure the Collab or to see some statistics:
-
-**Overview**
-  Will display recent activities in the Collab.
-
-**Team**
-  Here you can invite a colleague to collaborate
-
-**Storage**
-  Here you can see what data and files are in the Collab-storage. You can upload and download files to/from that storage space.
-
-**Settings**
-  Here you can change the privacy of the Collab and rename it, if required.
-
+When choosing a Use Case, if you select a Collab in which the chosen Use Case is already present, the scripts included in the Use Case are fetched again from a dedicated github page only in case they have been modified since the last cloning.
 
 ***********************************
 Workflows and Use Case Organization
@@ -98,7 +43,7 @@ Workflows and Use Case Organization
 A schematic organization of the Workflows and Use Cases is shown in 
 the figure on the left. An important aspect is that tools and services are
 open to the entire neuroscience community. This means that it does not matter 
-if you belong to an HBP partner Institution, an external Laboratory/Company, or 
+if you belong to an EBRAINS partner Institution, an external Laboratory/Company, or 
 if you are just a curious studenti: you can get free access to the entire set 
 of tools and services we offer.
 
@@ -132,7 +77,7 @@ To start taking advantage of the Worklows and Use Cases, visit the dedicated
 3. Use your own imagination, collaborate with your team, use available tools or 
    create new ones to pursue your scientific goal.
 4. Once you are satisfied with the results, you can download them and/or make 
-   your work available to other users by releasing it into the HBP database; 
+   your work available to other users by releasing it into the EBRAINS database; 
    our support team can help you to create a new tool/service.
 
 What you can do with the the Worklows and  Use Cases available depends on your 
@@ -184,7 +129,7 @@ Python and/or the NEURON simulation environment.
 
 **Power users:** Users that are interested in using the BSP infrastructure and 
 facilities for collaborative projects using public resources (such as the NSG), 
-or their own HPC grants for one of the supercomputer centers supporting HBP 
+or their own HPC grants for one of the supercomputer centers supporting EBRAINS 
 activities (JSC and CINECA). These users are able to design, implement, run, 
 and analyze models and simulations using the NEURON simulation environment; 
 they understand the information needed to implement and run a simulation of 
@@ -210,7 +155,7 @@ development of new Use Cases/models.
 **Code developers:** Designers and early adopters of initial versions of 
 Collabs/apps/webservices/models. These users are top experts in their 
 respective ICT and/or neuroscience field. Use Cases with this icon are usually 
-restricted to Collabs with a team composed of mostly HBP partners, they serve 
+restricted to Collabs with a team composed of mostly EBRAINS partners, they serve 
 the purpose of developing/testing advanced topics.
 
 |
@@ -249,7 +194,7 @@ HPC access
 
 .. container:: bsp-inline-text
 
-    Use cases with this icon require a small to medium amount of High-Performance Computing resources. They can be either public, such as those available through the NSG, or provided by the user through a personal grant, such as a PRACE award, on one of the supercomputer centers supporting HBP activities (JSC and CINECA).
+    Use cases with this icon require a small to medium amount of High-Performance Computing resources. They can be either public, such as those available through the NSG, or provided by the user through a personal grant, such as a PRACE award, on one of the supercomputer centers supporting EBRAINS activities (JSC and CINECA).
 
 .. container:: bsp-container-left
 
@@ -293,166 +238,22 @@ Video Tutorials
 
 **Trace Analysis**
 
-- Feature extraction (|ta_fe_video_link| - |ta_fe_zip_link|)
+- Feature extraction (|ta_fe_video_link|)
 
 .. |ta_fe_video_link| raw:: html  
 
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/FeatureExtraction/index.html" target="_blank">Play</a>
-
-.. |ta_fe_zip_link| raw:: html  
-
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/zip/FeatureExtraction.zip" target="_blank">Download</a>
-
-
-- Synaptic events fitting (|ta_sef_video_link| - |ta_sef_zip_link|)
-
-.. |ta_sef_video_link| raw:: html  
-
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/SynapticEventsFitting/index.html" target="_blank">Play</a>
-
-.. |ta_sef_zip_link| raw:: html  
-
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/zip/SynapticEventsFitting.zip" target="_blank">Download</a>
-
-
-- Synaptic events fitting with user model (|ta_sefum_video_link| - |ta_sefum_zip_link|)
-
-.. |ta_sefum_video_link| raw:: html  
-
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/SynapticEventsFittingWithUserModel/index.html" target="_blank">Play</a>
-
-.. |ta_sefum_zip_link| raw:: html  
-
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/zip/SynapticEventsFittingWithUserModel.zip" target="_blank">Download</a>
-
-
-- Synaptic events fitting with user data (|ta_sefud_video_link| - |ta_sefud_zip_link|)
-
-.. |ta_sefud_video_link| raw:: html  
-
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/SynapticEventsFittingWithUserData/index.html" target="_blank">Play</a>
-
-.. |ta_sefud_zip_link| raw:: html  
-
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/zip/SynapticEventsFittingWithUserData.zip" target="_blank">Download</a>
-
-|
-
-**Morphology Analysis**
-
-- Morphology analysis (|ma_ma_video_link| - |ma_ma_zip_link|)
-
-.. |ma_ma_video_link| raw:: html  
-
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/MorphologyAnalysis/index.html" target="_blank">Play</a>
-
-.. |ma_ma_zip_link| raw:: html  
-
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/zip/MorphologyAnalysis.zip" target="_blank">Download</a>
-    
-
-- Morphology visualization (|ma_mv_video_link| - |ma_mv_zip_link|)
-
-.. |ma_mv_video_link| raw:: html  
-
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/MorphologyVisualization/index.html" target="_blank">Play</a>
-
-.. |ma_mv_zip_link| raw:: html  
-
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/zip/MorphologyVisualization.zip" target="_blank">Download</a>
+    <a href="https://object.cscs.ch/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/cls-video-tutorial/NFE/NFE_video_tutorial_v01.mp4" target="_blank">Play</a>
 
 |
 
 **Single Cell Building**
 
-- Hodgkin-Huxley Neuron Builder (|scb_hhnb_video_link| - |scb_hhnb_zip_link|)
+- Hodgkin-Huxley Neuron Builder (|scb_hhnb_video_link|)
 
 .. |scb_hhnb_video_link| raw:: html  
 
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/HodgkinHuxleyNeuronBuilder/index.html" target="_blank">Play</a>
+    <a href="https://object.cscs.ch/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/cls-video-tutorial/HHNB/HHNB.m4v" target="_blank">Play</a>
 
-.. |scb_hhnb_zip_link| raw:: html  
-
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/zip/HodgkinHuxleyNeuronBuilder.zip" target="_blank">Download</a>
-
-
-- Rebuild an existing single hippocampal cell model (|scb_rem_video_link| - |scb_rem_zip_link|)
-
-.. |scb_rem_video_link| raw:: html  
-
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/RebuildAnExistingSingleHippocampalCellModel/index.html" target="_blank">Play</a>
-
-.. |scb_rem_zip_link| raw:: html  
-
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/zip/RebuildAnExistingSingleHippocampalCellModel.zip" target="_blank">Download</a>
-
-
-- Build your own single hippocampal cell model using HBP data (|scb_byo_video_link| - |scb_byo_zip_link|)
-
-.. |scb_byo_video_link| raw:: html  
-
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/BuildYourOwnSingleHippocampalCellModel/index.html" target="_blank">Play</a>
-
-.. |scb_byo_zip_link| raw:: html  
-
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/zip/BuildYourOwnSingleHippocampalCellModel.zip" target="_blank">Download</a>
-
-
-- Mono compartmental Cerebellar Granule cell optimization (|scb_mocc_video_link| - |scb_mocc_zip_link|)
-
-.. |scb_mocc_video_link| raw:: html  
-
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/MonoCompartmentalCerebellarGranuleCellOptimization/index.html" target="_blank">Play</a>
-
-.. |scb_mocc_zip_link| raw:: html  
-
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/zip/MonoCompartmentalCerebellarGranuleCellOptimization.zip" target="_blank">Download</a>
-
-
-- Multi compartmental Cerebellar Granule cell optimization (|scb_mucc_video_link| - |scb_mucc_zip_link|)
-
-.. |scb_mucc_video_link| raw:: html  
-
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/MultiCompartmentalCerebellarGranuleCellOptimization/index.html" target="_blank">Play</a>
-
-.. |scb_mucc_zip_link| raw:: html  
-
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/zip/MultiCompartmentalCerebellarGranuleCellOptimization.zip" target="_blank">Download</a>
-
-
-- Custom Axon Cerebellar Granule cell simulation (|scb_cac_video_link| - |scb_cac_zip_link|)
-
-.. |scb_cac_video_link| raw:: html  
-
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/CustomAxonCerebellarGranuleCellOptimization/index.html" target="_blank">Play</a>
-
-.. |scb_cac_zip_link| raw:: html  
-
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/zip/CustomAxonCerebellarGranuleCellOptimization.zip" target="_blank">Download</a>
-
-
-- Simulation and validation of a mouse Purkinje cell multicompartmental model (|scb_svp_video_link| - |scb_svp_zip_link|)
-
-.. |scb_svp_video_link| raw:: html  
-
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/SimulationAndValidationOfAMousePurkinjeCellMulticompartmentalModel/index.html" target="_blank">Play</a>
-
-.. |scb_svp_zip_link| raw:: html  
-
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/zip/SimulationAndValidationOfAMousePurkinjeCellMulticompartmentalModel.zip" target="_blank">Download</a>
-
-
-- Optimize a striatal fast-spiking interneuron (|scb_osfs_video_link| - |scb_osfs_zip_link|)
-
-.. |scb_osfs_video_link| raw:: html  
-
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/OptimiseAStriatalFastSpikingInterneuron/index.html" target="_blank">Play</a>
-
-.. |scb_osfs_zip_link| raw:: html  
-
-    <a href="https://object.cscs.ch:443/v1/AUTH_c0a333ecf7c045809321ce9d9ecdfdea/web-resources-bsp/bsp-video-tutorials/zip/OptimiseAStriatalFastSpikingInterneuron.zip" target="_blank">Download</a>
-
-|
 
 **Single Cell In Silico Experiments**
 
@@ -475,7 +276,7 @@ Service Account
 ===============
 
 The Service Account is a REST API service allowing developers to submit jobs,
-on behalf of HBP Collaboratory users, to remote HPC systems.
+on behalf of EBRAINS Collaboratory users, to remote HPC systems.
 
 For a thourough explanation on how to use the service, please refer to the
 |sa_doc_link|
@@ -529,35 +330,35 @@ Service Accessibility
       - * Download open source software from GitHub accounts of SP6 partners
       - * license terms of respective software
       - * support through channels indicated with the respective software
-        * community support through HBP Forum
-    * - HBP IDENTITY
-      - anyone with an HBP Identity Account
-      - * Browse BSP Use Case Collabs
-        * Browse BSP model Collabs
+        * community support through EBRAINS support team
+    * - EBRAINS IDENTITY
+      - anyone with an EBRAINS Identity Account
+      - * Browse CLSI Use Case Collabs
+        * Browse CLSI model Collabs
         * Can be added to private Collabs by Collab owners
         * Restricted access to apps: limited functionality or limited access
       - * license terms of respective software
         * HBP Collaboratory or Platform Terms of Service for accessible services
       - * Best effort support
-        * send inquiries to bsp-support@humanbrainproject.eu
+        * send inquiries to support@ebrains.eu
     * - PROJECT ACCESS
-      - anyone who belongs to an HBP Partnering Project (or similar agreement)
-      - * All rights of HBP Identity class
-        * Access to the online functionality of the Brain Simulation Platform if requested in the Partnering Project agreement
-        * Access to HBP models in the Brain Simulation Platform if requested in the Partnering Project agreement
+      - anyone who belongs to an EBRAINS Partnering Project (or similar agreement)
+      - * All rights of EBRAINS Identity class
+        * Access to the online functionality of the CLSI if requested in the Partnering Project agreement
+        * Access to EBRAINS models in the CLSI if requested in the Partnering Project agreement
         * HPC resources (*)
       - * license terms of respective software
-        * HBP Collaboratory or Platform Terms of Service for accessible services
+        * EBRAINS Collaboratory or Platform Terms of Service for accessible services
         * Terms of the Partnering Project agreement (or similar agreement)
       - * Full support according to terms of Partnering Project agreement
         * send inquiries and support requests to bsp-support@humanbrainproject.eu
-    * - HBP MEMBERS
-      - Anyone who belongs to an HBP partner institution and is granted accreditation to a particular HBP Subproject
-      - * All rights of HBP Identity class
-        * Access to the online functionality of the Brain Simulation Platform
-        * Access to HBP models in the Brain Simulation Platform
+    * - EBRAINS MEMBERS
+      - Anyone who belongs to an EBRAINS partner institution and is granted accreditation to a particular EBRAINS Subproject
+      - * All rights of EBRAINS Identity class
+        * Access to the online functionality of the CLSI 
+        * Access to EBRAINS models in the CLSI 
         * HPC resources (*)
-      - * HBP Consortium Agreement
+      - * EBRAINS Consortium Agreement
       - * Full support
         * send inquiries and support requests to bsp-support@humanbrainproject.eu
 
